@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="조선대학교">
+		<meta name="description" content="조선대학교 THE조아">
+		<meta name="copyrigt" content="조선대학교">
+		<meta name="keywords" content="조선대학교, 역량관리, 상담, 대학, 대학생, 역량관리시스템, 경력관리">
+		<title>조선대학교 THE조아</title>
+
+		<!-- [pp] favicon -->
+		<link rel="apple-touch-icon" href="../../../../images/favicon.png">
+		<link rel="shortcut icon" href="../../../../images/favicon.ico">
+		<!-- [pp] //favicon -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" href="../../../../src/magnetic-popup/css/magnific-popup.css">
+		<link rel="stylesheet" href="../../../../src/mCustomScrollbar/css/jquery.mCustomScrollbar.min.css">
+		<link rel="stylesheet" href="../../../../src/select2/css/select2.css">
+		<link rel="stylesheet" href="../../../../src/apexchart/css/apexcharts.css">
+		<link rel="stylesheet" href="../../../../src/apexchart_v3.34.0/css/apexcharts.css">
+		<link rel="stylesheet" href="../../../../src/fullcalendar-5.7/css/main.min.css">
+		<link rel="stylesheet" href="../../../../src/swiper/css/swiper.css">
+		<link rel="stylesheet" href="../../../../css/dl_global.css">
+		<link rel="stylesheet" href="../../../../css/client/normalize.css">
+		<link rel="stylesheet" href="../../../../css/client/grid.css">
+		<link rel="stylesheet" href="../../../../css/client/formstyle.css">
+		<link rel="stylesheet" href="../../../../css/client/table.css">
+		<link rel="stylesheet" href="../../../../css/client/common_ui.css">
+		<link rel="stylesheet" href="../../../../css/client/ui.css">
+		<link rel="stylesheet" href="../../../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!--[pp] js -->
+		<script src="../../../../src/jquery/js/jquery-3.5.1.min.js"></script>
+		<!-- [if lt IE 9]>
+		<script src="../../../../src/jquery/js/jquery-1.12.3.min.js"></script>
+		<script src="../../../../src/jquery/js/html5shiv.js"></script>
+		<script src="../../../../src/jquery/js/IE9.js"></script>
+		<script src="../../../../src/jquery/js/respond.min.js"></script>
+		<![endif]-->
+		<script src="../../../../src/magnetic-popup/js/jquery.magnific-popup.js"></script>
+		<script src="../../../../src/mCustomScrollbar/js/jquery.mCustomScrollbar.min.js"></script>
+		<script src="../../../../src/select2/js/select2.min.js"></script>
+		<script src="../../../../src/apexchart/js/apexcharts.js"></script>
+		<script src="../../../../src/apexchart_v3.34.0/js/apexcharts.js"></script>
+		<script src="../../../../src/fullcalendar-5.7/js/main.min.js"></script>
+		<script src="../../../../src/fullcalendar-5.7/js/locales-all.min.js"></script>
+		<script src="../../../../src/swiper/js/swiper.min.js"></script>
+		<script src="../../../../js/client/pp_common.js"></script>
+		<!--[pp] //js -->
+	</head>
+	<body>
+		<!--[pp] ie 하위버젼 접속시 알림 -->
+		<div id="browseralert">
+			본 사이트는 익스플로러11 이상, 크롬, 오페라, 파이어폭스 브라우저등의 최신버전에 최적화 되어 있습니다.<br/>지금 사용하고 계시는 브라우저는 곧 지원이 중단되므로
+			<a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">익스플로러 최신버젼</a>으로 업그레이드하시거나 <a href="https://www.google.com/intl/ko/chrome/browser/" target="_blank">크롬</a>, <a href="http://www.opera.com/ko/computer" target="_blank" style="color:#f9c461;">오페라</a>, <a href="https://www.mozilla.org/en-US/firefox/new/?scene=2" target="_blank">파이어폭스</a>등의 최신 브라우저를 이용해 주세요.
+			<button type="button" class="browseralert_close">닫기</button>
+		</div>
+		<!--[pp] // ie 하위버젼 접속시 알림 -->
+		
+		<!-- [pp] 로딩중 화면 -->
+		<div id="loading" style="display: none;">
+			<p id="loading_image">
+				<img src="../../../../images/loading.gif" alt="Loading..."><br>
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 화면 -->
+		
+		<!-- [pp] 푸터를 제외한 전체페이지 -->
+		<div class="page_wrap professor_sub">
+		
+			<!--[pp] skip nav -->
+			<nav class="skip_nav">
+				<a href="#gnb_skip">주요메뉴 바로가기</a>
+				<a href="#container_skip">본문영역 바로가기</a>
+			</nav>
+			<!--[pp] //skip nav -->
+			
+			<!-- [pp] nav -->
+			<div class="nav_wrap">
+				<!-- [pp] header -->
+				<header class="prof_header_wrap header_wrap">
+					<div class="header_top grid_content">
+						<h1 class="header_logo">
+							<a href="javascript:void(0);">
+								<img src="../../../../images/client/common/header_logo.svg" alt="조선대학교"/>
+							</a>
+						</h1>
+						<div class="function_left">
+							<a href="javascript:void(0);" class="btn_log btn_login">LOGIN</a>
+							<!-- [pp] 로그인/로그아웃 : 
+							<a href="javascript:void(0);" class="btn_log btn_login">LOGIN</a>
+							<a href="javascript:void(0);" class="btn_log btn_logout">LOGOUT</a>
+							-->
+							<p class="user_info">
+								<strong>김조선</strong> &#40;님&#41; 환영합니다
+							</p> 
+						</div>
+						<a href="javascript:void(0);" class="btn_admin">관리자화면으로 이동</a>
+						<button type="button" class="btn_sitemapmenu">닫기</button>
+						<button type="button" class="btn_menu">
+							메뉴보기
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+					<div class="header_bottom grid_content">
+						<nav id="gnb_skip" class="gnb_wrap" tabindex="0">
+							<ul class="gnb_list">
+								<li class="gnb_1depth gnb01">
+									<a href="javascript:void(0);">티칭 포트폴리오</a>
+									<ul class="gnb_2depth">
+										<li>
+											<a href="javascript:void(0);">교육철학</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">티칭전문성 개발</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">기타전문성 개발</a>
+										</li>
+									</ul>
+								</li>
+								<li class="gnb_1depth gnb02">
+									<a href="javascript:void(0);">교수지원 프로그램</a>
+									<ul class="gnb_2depth">
+										<li>
+											<a href="javascript:void(0);">프로그램 신청</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">나의 프로그램</a>
+										</li> 
+									</ul>
+								</li>
+								<li class="gnb_1depth gnb03">
+									<a href="javascript:void(0);">학생상담</a>
+									<ul class="gnb_2depth">
+										<li>
+											<a href="javascript:void(0);">신청현황 및 결과등록</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">상담 진행 히스토리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">만족도 조사</a>
+										</li>
+									</ul>
+								</li>
+								<li class="gnb_1depth gnb04">
+									<a href="javascript:void(0);">진단·설문</a>
+									<ul class="gnb_2depth">
+										<li>
+											<a href="javascript:void(0);">교수역량진단</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">설문조사</a>
+										</li> 
+									</ul>
+								</li>
+								<li class="gnb_1depth gnb05">
+									<a href="javascript:void(0);">채용·취업</a>
+									<ul class="gnb_2depth">
+										<li>
+											<a href="javascript:void(0);">채용정보</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">취업정보</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">취업커뮤니티</a>
+										</li> 
+										<li>
+											<a href="javascript:void(0);">취업출장신청</a>
+										</li> 
+										<li>
+											<a href="javascript:void(0);">취업실적신청</a>
+										</li> 
+									</ul>
+								</li>
+								<li class="gnb_1depth gnb06">
+									<a href="javascript:void(0);">커뮤니티</a>
+									<ul class="gnb_2depth">
+										<li>
+											<a href="javascript:void(0);">공지사항</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">공간대여</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">장비대여</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">THE조아 시스템 소개</a>
+										</li> 
+										<li>
+											<a href="javascript:void(0);">나의 쪽지</a>
+										</li>
+									</ul>
+								</li>
+								<li class="gnb_1depth gnb07">
+									<a href="javascript:void(0);">마이페이지</a>
+									<ul class="gnb_2depth">
+										<li>
+											<a href="javascript:void(0);">마이페이지</a>
+										</li> 
+									</ul>
+								</li>
+								<li class="gnb_1depth gnb08">
+									<a href="javascript:void(0);">비교과</a>
+									<ul class="gnb_2depth">
+										<li>
+											<a href="javascript:void(0);">비교과</a>
+										</li> 
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</header>
+				<!-- [pp] //header -->
+
+				<!-- [pp] 사이트맵 -->
+				<div class="sitemap prof_sitemap">
+					<div class="inner">
+						<div class="sitemap_bottom">
+							<div class="grid_content">
+								<button type="button" class="btn_sitemap">닫기</button>
+								<div class="gnb_2depth">
+									<strong class="gnb_tit">티칭 포트폴리오</strong>
+									<ul>
+										<li>
+											<a href="javascript:void(0);">교육철학</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">티칭전문성 개발</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">기타전문성 개발</a>
+										</li>
+									</ul>
+								</div>
+								<div class="gnb_2depth">
+									<strong class="gnb_tit">교수지원 프로그램</strong>
+									<ul>
+										<li>
+											<a href="javascript:void(0);">프로그램 신청</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">나의 프로그램</a>
+										</li> 
+									</ul>
+								</div>
+								<div class="gnb_2depth">
+									<strong class="gnb_tit">학생상담</strong>
+									<ul>
+										<li>
+											<a href="javascript:void(0);">신청현황 및 결과등록</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">상담 진행 히스토리</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">만족도 조사</a>
+										</li>
+									</ul>
+								</div>
+								<div class="gnb_2depth">
+									<strong class="gnb_tit">진단·설문</strong>
+									<ul>
+										<li>
+											<a href="javascript:void(0);">교수역량진단</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">설문조사</a>
+										</li> 
+									</ul>
+								</div>
+								<div class="gnb_2depth">
+									<strong class="gnb_tit">채용·취업</strong>
+									<ul>
+										<li>
+											<a href="javascript:void(0);">채용정보</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">취업정보</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">취업커뮤니티</a>
+										</li> 
+										<li>
+											<a href="javascript:void(0);">취업출장신청</a>
+										</li> 
+										<li>
+											<a href="javascript:void(0);">취업실적신청</a>
+										</li> 
+									</ul>
+								</div>
+								<div class="gnb_2depth">
+									<strong class="gnb_tit">커뮤니티</strong>
+									<ul>
+										<li>
+											<a href="javascript:void(0);">공지사항</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">공간대여</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">장비대여</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">THE조아 시스템 소개</a>
+										</li> 
+										<li>
+											<a href="javascript:void(0);">나의 쪽지</a>
+										</li>
+									</ul>
+								</div>
+								<div class="gnb_2depth">
+									<strong class="gnb_tit">마이페이지</strong>
+									<ul>
+										<li>
+											<a href="javascript:void(0);">마이페이지</a>
+										</li> 
+									</ul>
+								</div>
+								<div class="gnb_2depth">
+									<strong class="gnb_tit">비교과</strong>
+									<ul>
+										<li>
+											<a href="javascript:void(0);">비교과</a>
+										</li> 
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- [pp] //사이트맵 -->
+
+				<div class="prof_subpage_visual"></div>
+
+				<!-- [pp] lnb 영역 -->
+				<div class="prof_lnb_wrap on">
+					<div class="grid_content">
+						<nav class="prof_lnb_list">
+							<a href="javascript:void(0);" class="btn_home">메인으로 가기</a>
+							<ul>
+								<li class="prof_lnb_1depth">
+									<a href="javascript:void(0);">티칭 포트폴리오</a>
+									<ul class="prof_lnb_2depth">
+										<li>
+											<a href="javascript:void(0);">티칭 포트폴리오</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">교수지원 프로그램</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">학생상담</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">진단·설문</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">채용·취업</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">커뮤니티</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">마이페이지</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">비교과</a>
+										</li>
+									</ul>
+								</li>
+								<li class="prof_lnb_1depth">
+									<a href="javascript:void(0);">기타전문성 개발</a>
+									<ul class="prof_lnb_2depth">
+										<li>
+											<a href="javascript:void(0);">교육철학</a>
+										</li> 
+										<li>
+											<a href="javascript:void(0);">티칭전문성 개발</a>
+										</li>  
+										<li>
+											<a href="javascript:void(0);">기타전문성 개발</a>
+										</li>
+									</ul>
+								</li> 
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<!-- [pp] //lnb 영역 --> 
+
+			</div>
+			<!-- [pp] //nav --> 
+
+
+			<!-- [pp] subpage 컨텐츠영역 -->
+			<section id="container_skip" class="subcontent_wrap grid_content" tabindex="0">
+				<section class="section_toparea section_area">  
+					<h3 class="section_proftit_lg">기타전문성 개발</h3>   
+					<div class="search_toggle_row check_col_wrapper">
+						<div class="searchtoggle_left">
+							<p class="total_count">
+								<span>Total</span>2
+							</p>
+						</div>
+						<div class="searchtoggle_right">
+							<button type="button" class="btn_round btn_md btn_negative2">삭제</button>
+							<button type="button" class="btn_round btn_md btn_positive2">교외 활동 직접입력</button>
+						</div>
+					</div>
+					<div class="prof_tbl tbl tbl_col tbl_fixed scrollx_tbl_lg">
+						<table>
+							<caption>티칭전문성 개발</caption>
+							<colgroup>
+								<col style="width: 50px;">
+								<col style="width: 5%;">
+								<col style="width: auto;">
+								<col style="width: 18%;">
+								<col style="width: 8%;">
+								<col style="width: 16%;">
+								<col style="width: 8%;">
+								<col style="width: 110px;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col"> 
+										<p class="check_only">
+											<input type="checkbox" name="check_only1" id="check_only1_1" class="hidden">
+											<label for="check_only1_1">on</label>
+										</p>
+									</th>
+									<th scope="col">No</th>
+									<th scope="col">프로그램명</th>
+									<th scope="col">참여기간</th>
+									<th scope="col">교내/교외</th>
+									<th scope="col">주관부서/기관</th>
+									<th scope="col">이수 구분</th>
+									<th scope="col">활동 성찰</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row" colspan="8">내용이 없습니다</th>
+								</tr>
+								<tr>
+									<th scope="row"> 
+										<p class="check_only">
+											<input type="checkbox" name="check_only2" id="check_only2_1" class="hidden">
+											<label for="check_only2_1">on</label>
+										</p>
+									</th>
+									<td>2</td>
+									<td>빅데이터 인공지능 챗봇 개발 실습</td>
+									<td>2022.03.01 ~ 2022.06.30</td>
+									<td>교내</td>
+									<td>교수학습역량개발팀</td>
+									<td>이수</td>
+									<td class="td_input">
+										<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_neutral btn_disabled" disabled>보기</a>
+										<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_positive1">작성</a>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"> 
+										<p class="check_only">
+											<input type="checkbox" name="check_only3" id="check_only3_1" class="hidden">
+											<label for="check_only3_1">on</label>
+										</p>
+									</th>
+									<td>1</td>
+									<td>빅데이터 인공지능 챗봇 개발 실습</td>
+									<td>2022.03.01 ~ 2022.06.30</td>
+									<td>교내</td>
+									<td>교수학습역량개발팀</td>
+									<td>이수</td>
+									<td class="td_input">
+										<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_neutral">보기</a>
+										<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_positive2">수정</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--[pp] 페이징 -->
+					<div class="paging_wrap">
+						<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+						<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+						<a href="javascript:void(0);" class="active">1</a>
+						<a href="javascript:void(0);">2</a>
+						<a href="javascript:void(0);">3</a>
+						<a href="javascript:void(0);">4</a>
+						<a href="javascript:void(0);">5</a>
+						<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+						<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+					</div>
+					<!--[pp] //페이징 -->
+				</section>
+			</section>
+			<!-- [pp] //subpage 컨텐츠영역 -->
+		</div>
+		<!-- [pp] //푸터를 제외한 전체페이지 -->
+
+		<!-- [pp] footer -->
+		<footer class="footer_wrap">
+			<div class="prof_footer">
+				<div class="grid_content">
+					<ul>
+						<li>
+							대표전화 :
+							<a href="tel:062-230-7114">062.230.7114</a>
+						</li>
+						<li>
+							팩스 : 
+							<a href="tel:062-232-8834">062.232.8834</a>
+						</li>
+						<li>
+							[우] 61452 광주광역시 동구 조선대길 146(서석동) 조선대학교
+						</li>
+						<li class="copyright"> 
+							COPYRIGHT © CHOSUN UNIVERSITY ALL RIGHTS RESERVED.
+						</li>
+					</ul>
+					<a href="https://www3.chosun.ac.kr/chosun/656/subview.do" class="medium" target="_blank">개인정보처리방침</a>
+				</div>
+			</div> 
+			<!-- [pp] TOP 키 -->
+			<a href="javascript:void(0);" class="move_top" title="페이지 상단으로 이동">TOP</a>
+		</footer>
+		<!-- [pp] //footer -->
+	</body>
+</html>

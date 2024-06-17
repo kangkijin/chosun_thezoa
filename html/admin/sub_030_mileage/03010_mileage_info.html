@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, height=device-height, viewport-fit=cover, shrink-to-fit=no">
+	<meta name="title" content="조선대학교">
+	<meta name="description" content="조선대학교 관리자 화면">
+	<meta name="copyrigt" content="조선대학교">
+	<meta name="keywords" content="조선대학교, 역량관리, 상담, 대학, 대학생, 역량관리시스템, 경력관리">
+	<title>조선대학교 관리자</title>
+	<link rel="apple-touch-icon" href="../../../images/favicon.png">
+	<link rel="shortcut icon" href="../../../images/favicon.ico">
+	<!-- [pp] 아이콘글꼴/font-awesome -->
+	<link rel="stylesheet" href="../../../fonts/font-awesome/css/font-awesome.min.css">
+	<!-- [pp] 아이콘글꼴/font-awesome/파이어폭스 미출력 에러 대응 -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+	<!-- css -->
+	<link rel="stylesheet" href="../../../plugin/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="../../../plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="../../../plugin/Ionicons/css/ionicons.min.css">
+	<link rel="stylesheet" href="../../../css/admin/src/AdminLTE.css">
+	<link rel="stylesheet" href="../../../css/admin/src/skins/_all-skins.css">
+	<link rel="stylesheet" href="../../../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_common.css">
+	<link rel="stylesheet" href="../../../css/dl_global.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_custom.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_table.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_popup.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_ui.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+	<!--[if lt IE 10]>
+	<div id="ad_iever_upgradeinfo" style="width:100%; padding:10px; text-align:center; background-color:#db4c3b;">
+		<div style="width:800px; margin: 0 auto; position:relative; color:#fff; z-index:2000;">
+			본 사이트는 익스플로러10 이상, 크롬, 오페라, 파이어폭스 브라우저등의 최신버전에 최적화 되어 있습니다.<br/>지금 사용하고 계시는 브라우저는 곧 지원이 중단되므로 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank" style="color:#1cd9e0;">익스플로러 최신버젼</a>으로 업그레이드하시거나 <a href="https://www.google.com/intl/ko/chrome/browser/" target="_blank" style="color:#1cd9e0;">크롬</a>, <a href="http://www.opera.com/ko/computer" target="_blank" style="color:#1cd9e0;">오페라</a>, <a href="https://www.mozilla.org/en-US/firefox/new/?scene=2" target="_blank" style="color:#1cd9e0;">파이어폭스</a>등의 최신 브라우저를 이용해 주세요.
+		</div>
+	</div>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="../../../js/html5shiv.js"></script>
+		<script src="../../../js/IE9.js"></script>
+		<script src="../../../js/respond.min.js"></script>
+	<![endif]-->
+	<!-- [pp] 로딩중 -->
+	<div id="loading">
+		<p id="loading_image">
+			<img src="../../../images/loading.gif" alt="Loading..."/><br/>
+			<span>Loading</span>
+		</p>
+	</div>
+	<!-- [pp] //로딩중 -->
+	<div class="wrapper">
+		<!--[pp] header -->
+		<header class="main-header">
+			<!--[pp] logo -->
+			<a href="javascript:void(0);" class="logo">
+				<!--[pp] 햄버거 버튼 클릭시 메뉴가 접힌 상태에서 보여줄 로고 -->
+				<span class="logo-mini">
+					<img src="../../../images/favicon.png" alt="조선대학교 관리자 화면">
+				</span>
+				<!--[pp] //햄버거 버튼 클릭시 메뉴가 접힌 상태에서 보여줄 로고 -->
+				<span class="logo-lg">
+					<img src="../../../images/admin/header_logo.svg" alt="조선대학교 관리자 화면">
+				</span>
+			</a>
+			<!--[pp] //logo -->
+			<nav class="navbar navbar-static-top" role="navigation">
+				<!--[pp] 햄버거버튼 -->
+				<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+					<span class="sr-only">주요메뉴 열고닫기</span>
+				</a>
+				<!--[pp] //햄버거버튼 -->
+				<!--[pp] tnb -->
+				<div class="navbar-custom-menu">
+					<ul class="nav navbar-nav">
+						<li class="hidden-xs pp_username">
+							<a href="javascript:void(0);">
+								<i class="fa fa-user"></i>
+								<span class="pp_user_txt">최고관리자님</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" class="pp_client_link">
+								<i class="fa fa-television"></i>
+								<span class="hidden-xs pp_user_txt">학생화면 바로가기</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<i class="fa fa-unlock-alt"></i>
+								<span class="hidden-xs pp_user_txt">LOGOUT</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--[pp] //tnb -->
+			</nav>
+		</header>
+		<!--[pp] //header -->
+		<!--[pp] gnb -->
+		<aside class="main-sidebar">
+			<section class="sidebar">
+				<div class="user-panel">
+					<div class="pull-left image">
+						<img src="../../../images/admin/user_img.png" class="img-circle" alt="User Image">
+					</div>
+					<div class="pull-left info">
+						<p>최고 관리자님</p>
+						<span>
+							<i class="fa fa-calendar"></i>&nbsp;최종접속일: 19-01-01
+						</span>
+					</div>
+				</div>
+				<ul class="sidebar-menu" data-widget="tree">
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>포탈관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">메뉴 관리</a></li>
+							<li><a href="javascript:void(0);">콘텐츠 관리</a></li>
+							<li><a href="javascript:void(0);">권한 관리</a></li>
+							<li><a href="javascript:void(0);">사용자별 권한 관리</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-check-square-o"></i><span>통합진단관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li class="treeview">
+								<a href="javascript:void(0);">핵심역량진단<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+								<ul class="treeview-menu">
+									<li><a href="javascript:void(0);">진단등록</a></li>
+									<li><a href="javascript:void(0);">진단개설 관리</a></li>
+									<li><a href="javascript:void(0);">진단문항지 등록</a></li>
+									<li><a href="javascript:void(0);">진단문항지 관리</a></li>
+									<li><a href="javascript:void(0);">핵심역량진단 결과</a></li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:void(0);">학습유형진단<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+								<ul class="treeview-menu">
+									<li><a href="javascript:void(0);">진단등록</a></li>
+									<li><a href="javascript:void(0);">진단개설 관리</a></li>
+									<li><a href="javascript:void(0);">진단문항지 등록</a></li>
+									<li><a href="javascript:void(0);">진단문항지 관리</a></li>
+									<li><a href="javascript:void(0);">학습유형진단 결과</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-diamond"></i><span>진로설계관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li class="treeview">
+								<a href="javascript:void(0);">진로탐색 관리<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+								<ul class="treeview-menu">
+									<li><a href="javascript:void(0);">TOP10 기업관리</a></li>
+									<li><a href="javascript:void(0);">대상자 관리</a></li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:void(0);">진로설계 관리<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+								<ul class="treeview-menu">
+									<li><a href="javascript:void(0);">진로설계</a></li>
+									<li><a href="javascript:void(0);">내 로드맵 조회</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-line-chart"></i><span>역량개발관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">교과정보 관리</a></li>
+							<li><a href="javascript:void(0);">비교과 프로그램 등록</a></li>
+							<li><a href="javascript:void(0);">비교과 프로그램 승인</a></li>
+							<li><a href="javascript:void(0);">비교과 프로그램 내역</a></li>
+							<li><a href="javascript:void(0);">비교과 프로그램 결과</a></li>
+							<li><a href="javascript:void(0);">비교과 프로그램 현황</a></li>
+							<li><a href="javascript:void(0);">교외활동 승인 관리</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa  fa-comments-o"></i><span>상담 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li class="treeview">
+								<a href="javascript:void(0);">지도교수 상담<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+								<ul class="treeview-menu">
+									<li><a href="javascript:void(0);">지도학생 매핑</a></li>
+									<li><a href="javascript:void(0);">지도학생 관리</a></li>
+									<li><a href="javascript:void(0);">상담현황</a></li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:void(0);">심리상담 상담<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+								<ul class="treeview-menu">
+									<li><a href="javascript:void(0);">상담 신청현황</a></li>
+									<li><a href="javascript:void(0);">상담 일지관리</a></li>
+									<li><a href="javascript:void(0);">상담현황</a></li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:void(0);">학습상담 상담<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+								<ul class="treeview-menu">
+									<li><a href="javascript:void(0);">상담일정 관리</a></li>
+									<li><a href="javascript:void(0);">상담 일지관리</a></li>
+									<li><a href="javascript:void(0);">상담현황</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);"><i class="fa fa-building"></i>취업지원 관리</a></li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-pie-chart"></i><span>통계관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">핵심역량진단 통계</a></li>
+							<li><a href="javascript:void(0);">학습유형진단 통계</a></li>
+							<li><a href="javascript:void(0);">비교과 프로그램 통계</a></li>
+							<li><a href="javascript:void(0);">자격증/어학 승인 통계</a></li>
+							<li><a href="javascript:void(0);">마일리지 통계</a></li>
+							<li><a href="javascript:void(0);">로그인 접속 통계</a></li>
+							<li><a href="javascript:void(0);">메뉴 접속 통계</a></li>
+							<li><a href="javascript:void(0);">취업 현황</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-cubes"></i><span>마일리지 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">마일리지 현황</a></li>
+							<li><a href="javascript:void(0);">인증 현황</a></li>
+							<li><a href="javascript:void(0);">증명서 발급 현황</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-users"></i><span>커뮤니티 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">공지사항</a></li>
+							<li><a href="javascript:void(0);">자료실</a></li>
+							<li><a href="javascript:void(0);">FAQ</a></li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+		</aside>
+		<!--[pp] //gnb -->
+
+		<!--[pp] 본문영역 -->
+		<div class="content-wrapper">
+			<!--[pp] 본문 타이틀 영역/페이지제목,페이지네비게이션 -->
+			<section class="content-header">
+				<h1>문화마일리지 안내</h1>
+				<ol class="breadcrumb">
+					<li><a href="#"><i class="fa fa-home"></i>home</a></li>
+					<li class="active">문화마일리지 안내</li>
+				</ol>
+			</section>
+			<!--[pp] //본문 타이틀 영역/페이지제목,페이지네비게이션 -->
+			<!--[pp] 본문내용영역 -->
+			<section class="content container-fluid">
+				<div class="nav-tabs-custom">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab_1" data-toggle="tab">CU-SP/문화마일리지</a></li>
+						<li><a href="#tab_2" data-toggle="tab">문화마일리지 영역</a></li>
+						<li><a href="#tab_3" data-toggle="tab">배점표/인증부서</a></li>
+						<li><a href="#tab_4" data-toggle="tab">장학혜택</a></li>
+						<li><a href="#tab_5" data-toggle="tab">자격증 기준표</a></li>
+						<li><a href="#tab_6" data-toggle="tab">마일리지 내규/문의처</a></li>
+					</ul>
+					<div class="tab-content pd_0 border_none">
+						<div class="tab-pane active" id="tab_1">
+							<div class="box box-solid mg_0">
+								<div class="box-body">
+									<div class="mg_b20">
+										<h3 class="box-title font_18">CU-SP (Chosun University Student Portpolio)</h3>
+										<div class="ta_c">
+											<img src="../../../images/admin/img_cusp.png" alt="CU-SP" style="max-width: 100%;">
+										</div>
+									</div>
+									<div class="mg_b20">
+										<h3 class="box-title font_18">문화마일리지</h3>
+										<div class="ta_c">
+											<img src="../../../images/admin/img_culturemileage.png" alt="문화마일리지"  style="max-width: 100%;">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="tab_2">
+							<div class="box box-solid mg_0">
+								<div class="box-body">
+									<p class="mg_b10 bold">※ 문화마일리지는 창의적인 글로벌 인재양성을 목표로, 6개(대)영역/9개(중)영역 하위 28개 항목의 세부 활동영역 수행 시 마일리지를 부여합니다.</p>
+									<div class="table-responsive tbl_scroll">
+										<table class="table table-bordered tbl_col tbl_fixed">
+											<caption>문화마일리지</caption>
+											<colgroup>
+												<col style="width: 25%;" span="4">
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col" colspan="2">영역</th>
+													<th scope="col">항목</th>
+													<th scope="col">최대 마일리지(M)</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th scope="row" rowspan="9">핵심소양 영역</th>
+													<td rowspan="3">문화체험활동</td>
+													<td>예술체험</td>
+													<td>50</td>
+												</tr>
+												<tr>
+													<td>공연 및 전시관람</td>
+													<td>100</td>
+												</tr>
+												<tr>
+													<td>스포츠 활동</td>
+													<td>100</td>
+												</tr>
+												<tr>
+													<td rowspan="4">창의성 활동</td>
+													<td>공연 및 전시활동</td>
+													<td>100</td>
+												</tr>
+												<tr>
+													<td>공모전</td>
+													<td>400</td>
+												</tr>
+												<tr>
+													<td>학습증진활동</td>
+													<td>500</td>
+												</tr>
+												<tr>
+													<td>사이버활동</td>
+													<td>100</td>
+												</tr>
+												<tr>
+													<td>공로 선행 표창</td>
+													<td>공로 선행 표창</td>
+													<td>100</td>
+												</tr>
+												<tr>
+													<td colspan="2" class="bg_lightgray bold">최대값</td>
+													<td class="bg_lightgray bold">1,450</td>
+												</tr>
+												<tr>
+													<th scope="row" rowspan="7">봉사 영역</th>
+													<td rowspan="6">공동체 문화 나누기</td>
+													<td>다문화가정봉사</td>
+													<td>100</td>
+												</tr>
+												<tr>
+													<td>학내봉사</td>
+													<td>100</td>
+												</tr>
+												<tr>
+													<td>사회봉사</td>
+													<td>300</td>
+												</tr>
+												<tr>
+													<td>문화예술봉사</td>
+													<td>50</td>
+												</tr>
+												<tr>
+													<td>해외봉사</td>
+													<td>100</td>
+												</tr>
+												<tr>
+													<td>교육품질 개선활동</td>
+													<td>30</td>
+												</tr>
+												<tr>
+													<td colspan="2" class="bg_lightgray bold">최대값</td>
+													<td class="bg_lightgray bold">650</td>
+												</tr>
+												<tr>
+													<th scope="row" rowspan="3">취업 영역</th>
+													<td rowspan="2">★여기 SB에 없어서 뭐가 들어가는지 모르겠음★</td>
+													<td>구직활동</td>
+													<td>320</td>
+												</tr>
+												<tr>
+													<td>산학연구활동</td>
+													<td>160</td>
+												</tr>
+												<tr>
+													<td colspan="2" class="bg_lightgray bold">최대값</td>
+													<td class="bg_lightgray bold">1330</td>
+												</tr>
+												<tr>
+													<th scope="row" rowspan="7">독서 영역</th>
+													<td rowspan="2">독서력 향상 활동</td>
+													<td>독서(명저) 인증</td>
+													<td>200</td>
+												</tr>
+												<tr>
+													<td>독서토론클럽</td>
+													<td>150</td>
+												</tr>
+												<tr>
+													<td rowspan="4">독서관련 도서관 활용</td>
+													<td>대출</td>
+													<td>250</td>
+												</tr>
+												<tr>
+													<td>자료실출입</td>
+													<td>20</td>
+												</tr>
+												<tr>
+													<td>이용교육</td>
+													<td>30</td>
+												</tr>
+												<tr>
+													<td>행사참여</td>
+													<td>110</td>
+												</tr>
+												<tr>
+													<td colspan="2" class="bg_lightgray bold">최대값</td>
+													<td class="bg_lightgray bold">500</td>
+												</tr>
+												<tr>
+													<th scope="row" rowspan="3">국제화 영역</th>
+													<td rowspan="2">글로벌 활동</td>
+													<td>다문화(해외)체험</td>
+													<td>300</td>
+												</tr>
+												<tr>
+													<td>글로벌 소통능력</td>
+													<td>200</td>
+												</tr>
+												<tr>
+													<td colspan="2" class="bg_lightgray bold">최대값</td>
+													<td class="bg_lightgray bold">500</td>
+												</tr>
+												<tr>
+													<th scope="row" rowspan="5">자기관리 영역</th>
+													<td rowspan="4">자기 역량 관리 활동</td>
+													<td>상담</td>
+													<td>280</td>
+												</tr>
+												<tr>
+													<td>Self Leadership</td>
+													<td>80</td>
+												</tr>
+												<tr>
+													<td>건강증진</td>
+													<td>20</td>
+												</tr>
+												<tr>
+													<td>전문성 강화</td>
+													<td>150</td>
+												</tr>
+												<tr>
+													<td colspan="2" class="bg_lightgray bold">최대값</td>
+													<td class="bg_lightgray bold">530</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="3" class="bg_lightgray bold">합계</th>
+													<td class="bg_lightgray bold">4,960</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="tab_3">
+							<div class="box box-solid mg_0">
+								<div class="box-body">
+									<ul class="list_dot mg_b10">
+										<li>아래 6대 영역을 선택하면, 세부 활동영역 별 부여 마일리지를 확인 할 수 있습니다. *마일리지 부여 제한 : 활동영역 별 최대값 /  (중)영역별 총 값</li>
+										<li>마일리지 인증은 주관부서 및 단과대학에서 인증합니다.</li>
+									</ul>
+									<ul class="ad_tablist ad_showtab">
+										<li><a href="javascript:void(0);" class="on">핵심소양</a></li>
+										<li><a href="javascript:void(0);">봉사영역</a></li>
+										<li><a href="javascript:void(0);">취업영역</a></li>
+										<li><a href="javascript:void(0);">독서영역</a></li>
+										<li><a href="javascript:void(0);">국제화영역</a></li>
+										<li><a href="javascript:void(0);">자기관리영역</a></li>
+									</ul>
+									<div class="section_sarea">
+										<p class="bold font_16 font_black mg_b5">핵심소양 영역 (1450M)</p>
+										<!-- [pp] 내용이 없을때 :
+										<div class="nocnt_box">
+											<p>
+												내용이 없습니다
+											</p>
+										</div> 
+										-->
+										<div class="table-responsive tbl_scroll">
+											<table class="table table-bordered tbl_col tbl_fixed">
+												<caption>핵심소양</caption>
+												<colgroup>
+													<col style="width: 10%;">
+													<col style="width: 15%;">
+													<col style="width: auto;">
+													<col style="width: 10%;">
+													<col style="width: 10%;">
+													<col style="width: 10%;">
+													<col style="width: 10%;">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">영역</th>
+														<th scope="col">항목</th>
+														<th scope="col">활동영역</th>
+														<th scope="col">점수</th>
+														<th scope="col">항목별 최대값</th>
+														<th scope="col">총값</th>
+														<th scope="col">주관(인증)</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row" rowspan="11">문화체험활동</th>
+														<td rowspan="3">예술체험</td>
+														<td>비엔날레</td>
+														<td>건당 10M</td>
+														<td>20M</td>
+														<td rowspan="3">50M</td>
+														<td>단과대학</td>
+													</tr>
+													<tr>
+														<td>교내문화유적답사</td>
+														<td>건당 10M</td>
+														<td>40M</td>
+														<td>단과대학</td>
+													</tr>
+													<tr>
+														<td>박람회</td>
+														<td>건당 10M</td>
+														<td>40M</td>
+														<td>단과대학</td>
+													</tr>
+													<tr>
+														<td rowspan="8">공연 및 전시관람</td>
+														<td>미술관</td>
+														<td>건당 5M</td>
+														<td>30M</td>
+														<td rowspan="8">100M</td>
+														<td>단과대학</td>
+													</tr>
+													<tr>
+														<td>박물관</td>
+														<td>건당 5M</td>
+														<td>30M</td>
+														<td>단과대학</td>
+													</tr>
+													<tr>
+														<td>영화</td>
+														<td>건당 5M</td>
+														<td>30M</td>
+														<td>단과대학</td>
+													</tr>
+													<tr>
+														<td>연극</td>
+														<td>건당 5M</td>
+														<td>30M</td>
+														<td>단과대학</td>
+													</tr>
+													<tr>
+														<td>뮤지컬</td>
+														<td>건당 5M</td>
+														<td>30M</td>
+														<td>단과대학</td>
+													</tr>
+													<tr>
+														<td>오페라</td>
+														<td>건당 5M</td>
+														<td>30M</td>
+														<td>단과대학</td>
+													</tr>
+													<tr>
+														<td>음악회</td>
+														<td>건당 5M</td>
+														<td>30M</td>
+														<td>단과대학</td>
+													</tr>
+													<tr>
+														<td>무용공연</td>
+														<td>건당 5M</td>
+														<td>30M</td>
+														<td>단과대학</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="tab_4">
+							<div class="box box-solid mg_0">
+								<div class="box-body">
+									<div class="mg_b20">
+										<h5 class="section_tit_sm">문화마일리지 장학제도</h5>
+										<div class="mileage_systembox">
+											<ul>
+												<li>
+													<strong>참여대상 및 마일리지 인정기간</strong>
+													<ul class="list_dot_sm">
+														<li>학과(부) 재학생</li>
+														<li>입학 후부터 참여한 활동 모두 인정 (단, 상담 및 Self Leadership 항목은 2011학년도부터 인정)</li>
+													</ul>
+												</li>
+												<li>
+													<strong>신청 방법</strong>
+													<ul class="list_dot_sm">
+														<li>
+															매년 8월말까지 적립한 마일리지는 9월초에, 12월말까지 적립한 마일리지는 익년 1월초에 신청받아 지급처리<br/>
+															(*8월 졸업생이 경우 2월말에 적립 후 3월초 신청 지급)
+														</li>
+														<li>최소 100M에서, 최대 1000M까지 사용 가능</li>
+														<li>마일리지 산정은 1마일리지 당 700원으로 환산하여 지급</li>
+														<li>사용한 마일리지는 차감됨</li>
+													</ul>
+												</li>
+												<li>
+													<strong>필수 적립 조건</strong>
+													<ul class="list_dot_sm">
+														<li>1.핵심소양 영역 중 2개 이상 항목에서 적립</li>
+														<li>2.봉사 영역 / 취업 영역 / 독서 영역  /국제화 영역 중 3개 이상 영역에서 적립</li>
+														<li>3.자기관리 영역(530M) 중 50M이상 적립 (단, Self Leadership 항목 필수 제출)</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="mg_b20">
+										<h5 class="section_tit_sm">문화 리더 선발</h5>
+										<div class="whitecnt_box">
+											<ul class="list_dot_sm">
+												<li>문화 마일리지 점수 상위 학생 중 별도의 절차를 거쳐 선발하여 해외 문화 탐방 등의 기회를 부여 (단, 예산 허용 범위 내)</li>
+											</ul>
+										</div>
+									</div>
+									<div>
+										<h5 class="section_tit_sm">백악 문화 리더</h5>
+										<div class="whitecnt_box">
+											<ul class="list_dot_sm">
+												<li>각 영역별 활동을 열심히 하고 문화 마일리지를 적립한 후에 누적한 마일리지 합계가 2,000M 이상일 경우, 『백악문화리더』 인증서와 부상을 수여</li>
+												<li>3학년 1학기 이후부터 개교기념일 또는 졸업식에 수여</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="tab_5">
+							<div class="box box-solid mg_0">
+								<div class="box-body">
+									<div class="section_marea">
+										<h5 class="section_tit_sm">자격증 기준표</h5>
+										<ul class="ad_tablist ad_showtab">
+											<li>
+												<a href="javascript:void(0);" class="on">컴퓨터</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">경영</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">공학·과학</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">대체의학</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">문화관광</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">사회·법</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">언어</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">예체능</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">기타</a>
+											</li>
+										</ul>
+										<div class="ad_tbl_top">
+											<ul class="ad_tbl_count">
+												<li><span>Total:</span>515</li>
+											</ul>
+											<div class="ad_tbl_toplist">
+												<select class="form-control input-sm wd_120 dp_inline va_t">
+													<option value="" selected="">20건씩 보기</option>
+													<option value="">50건씩 보기</option>
+													<option value="">100건씩 보기</option>
+												</select>
+											</div>
+										</div>
+										<div class="table-responsive tbl_scroll">
+											<table class="table table-bordered tbl_fixed tbl_col">
+												<caption>자격증 기준표</caption>
+												<colgroup>
+													<col style="width: 8%;"> 
+													<col style="width: 8%;"> 
+													<col style="width: 15%;"> 
+													<col style="width: 15%;"> 
+													<col style="width: 10%;"> 
+													<col style="width: auto;"> 
+													<col style="width: 8%;"> 
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">NO</th>
+														<th scope="col">분류</th>
+														<th scope="col">발행기관</th>
+														<th scope="col">자격증명</th>
+														<th scope="col">구분</th>
+														<th scope="col">주요자격요건</th>
+														<th scope="col">등급</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">3</th>
+														<td>컴퓨터</td>
+														<td>교육소프트웨어진출센터</td>
+														<td>IPCT(인터넷실용능력) 1급</td>
+														<td>민간인증</td>
+														<td>제한없음</td>
+														<td>3</td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>컴퓨터</td>
+														<td>정보통신자격관리협회</td>
+														<td>정보보안관리</td>
+														<td>민간인증</td>
+														<td>제한없음</td>
+														<td>2</td>
+													</tr>
+													<tr>
+														<th scope="row">1</th>
+														<td>컴퓨터</td>
+														<td>교육소프트웨어진출센터</td>
+														<td>IPCT(인터넷실용능력) 1급</td>
+														<td>민간인증</td>
+														<td>제한없음</td>
+														<td>3</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<!--[pp] 페이징 -->
+										<div class="paging_simple_numbers ta_c">
+											<ul class="pagination newpage">
+												<li class="paginate_button first disabled">
+													<a href="javascript:void(0);" title="첫 페이지">첫 페이지</a>
+												</li>
+												<li class="paginate_button previous disabled">
+													<a href="javascript:void(0);" title="이전 페이지">이전 페이지</a>
+												</li>
+												<li class="paginate_button active">
+													<a href="javascript:void(0);">1</a>
+												</li>
+												<li class="paginate_button">
+													<a href="javascript:void(0);">2</a>
+												</li>
+												<li class="paginate_button">
+													<a href="javascript:void(0);">3</a>
+												</li>
+												<li class="paginate_button">
+													<a href="javascript:void(0);">4</a>
+												</li>
+												<li class="paginate_button">
+													<a href="javascript:void(0);">5</a>
+												</li>
+												<li class="paginate_button next">
+													<a href="javascript:void(0);" title="다음 페이지">다음 페이지</a>
+												</li>
+												<li class="paginate_button last">
+													<a href="javascript:void(0);" title="마지막페이지">마지막 페이지</a>
+												</li>
+											</ul>
+										</div>
+										<!--[pp] //페이징 -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="tab_6">
+							<div class="box box-solid mg_0">
+								<div class="box-body">
+									<div class="grid_row">
+										<div class="grid_col col_xl_6 col_sm_3">
+											<h5 class="section_tit_sm">CU-SP 운영내규</h5>
+											<ul class="plannergo_list download">
+												<li>
+													<a href="javascript:void(0);">마일리지 운영내규 다운로드</a>
+												</li>
+											</ul>
+											<div class="whitecnt_box mg_t10">
+												<div class="attachment_box">
+													<div class="top">
+														<label class="btn btn-primary btn_form btn_file">
+															<i class="fa fa-upload"></i>파일첨부
+															<input type="file" class="hidden">
+														</label>
+													</div>
+													<div class="inner">
+														<!-- [pp] 파일 없을 경우 추가 :-->
+														<!--
+														<dl class="addfile_info">
+															<dt>
+																상단의 버튼을 클릭하거나 또는 파일 Drag로 추가해주세요.
+															</dt>
+															<dd>
+																<span>hwp</span>
+																<span>doc</span>
+																<span>docx</span>
+																<span>xls</span>
+																<span>xlsx</span>
+																<span>ppt</span>
+																<span>pptx</span>
+																<span>txt</span>
+																<span>png</span>
+																<span>pdf</span>
+																<span>zip</span>
+																<span>mp4</span>
+																<span>jpg</span>
+																<span>jpeg</span>
+																<span>gif</span>
+															</dd>
+														</dl>
+														-->
+														<dl class="addfile_info">
+															<dt>
+																상단의 버튼을 클릭하거나 또는 파일 Drag로 추가해주세요.
+															</dt>
+															<dd>
+																<span>hwp</span>
+																<span>doc</span>
+																<span>docx</span>
+																<span>xls</span>
+																<span>xlsx</span>
+																<span>ppt</span>
+																<span>pptx</span>
+																<span>txt</span>
+																<span>png</span>
+																<span>pdf</span>
+																<span>zip</span>
+																<span>mp4</span>
+																<span>jpg</span>
+																<span>jpeg</span>
+																<span>gif</span>
+															</dd>
+														</dl>
+														<!-- <p class="file_added video">
+															<a href="javascript:void(0);">
+																파일명 입니다 길경우 말줄임 표시합니다 파일명 입니다 길경우 말줄임 표시합니다 파일명 입니다 길경우 말줄임 표시합니다 파일명 입니다 길경우 말줄임 표시합니다 파일명 입니다 길경우 말줄임 표시합니다.mp4
+																<i>&#40;2.02MB&#41;</i>
+															</a>
+														</p>
+														<p class="file_added image">
+															<a href="javascript:void(0);">
+																eRoom Live 강의_20201202.jpg
+																<i>&#40;2.02MB&#41;</i>
+															</a>
+														</p>
+														<p class="file_added document">
+															<a href="javascript:void(0);">
+																eRoom Live 강의_20201202.hwp
+																<i>&#40;2.02MB&#41;</i>
+															</a>
+														</p>
+														<p class="file_added document">
+															<span>
+																파일명이 아무리 길어도 모두 보여줍니다 파일명이 아무리 길어도 모두 보여줍니다 파일명이 아무리 길어도 모두 보여줍니다 파일명이 아무리 길어도 모두 보여줍니다 파일명이 아무리 길어도 모두 보여줍니다.hwp 
+																<i>&#40;2.02MB&#41;</i>
+															</span>
+															<button type="button" class="btn_del">파일 삭제</button>
+														</p>
+														<p class="file_added document file_deleting">
+															<span>
+																eRoom Live 강의_20201202.hwp
+																<i>&#40;2.02MB&#41;</i>
+															</span>
+															<button type="button" class="btn_del">파일 삭제</button>
+														</p> -->
+													</div>
+													<div class="bottom">
+														<div class="test_bar">
+															<p class="wd_p50"></p>
+														</div>
+														<p class="file_volume">34.03KB / 2GB</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="grid_col col_xl_6 col_sm_3">
+											<h5 class="section_tit_sm">장학금 지급내규</h5>
+											<ul class="plannergo_list download">
+												<li>
+													<a href="javascript:void(0);">장학금 지급내규 다운로드</a>
+												</li>
+											</ul>
+											<div class="whitecnt_box mg_t10">
+												<div class="attachment_box">
+													<div class="top">
+														<label class="btn btn-primary btn_form btn_file">
+															<i class="fa fa-upload"></i>파일첨부
+															<input type="file" class="hidden">
+														</label>
+													</div>
+													<div class="inner">
+														<!-- [pp] 파일 없을 경우 추가 :-->
+														<!--
+														<dl class="addfile_info">
+															<dt>
+																상단의 버튼을 클릭하거나 또는 파일 Drag로 추가해주세요.
+															</dt>
+															<dd>
+																<span>hwp</span>
+																<span>doc</span>
+																<span>docx</span>
+																<span>xls</span>
+																<span>xlsx</span>
+																<span>ppt</span>
+																<span>pptx</span>
+																<span>txt</span>
+																<span>png</span>
+																<span>pdf</span>
+																<span>zip</span>
+																<span>mp4</span>
+																<span>jpg</span>
+																<span>jpeg</span>
+																<span>gif</span>
+															</dd>
+														</dl>
+														-->
+														<dl class="addfile_info">
+															<dt>
+																상단의 버튼을 클릭하거나 또는 파일 Drag로 추가해주세요.
+															</dt>
+															<dd>
+																<span>hwp</span>
+																<span>doc</span>
+																<span>docx</span>
+																<span>xls</span>
+																<span>xlsx</span>
+																<span>ppt</span>
+																<span>pptx</span>
+																<span>txt</span>
+																<span>png</span>
+																<span>pdf</span>
+																<span>zip</span>
+																<span>mp4</span>
+																<span>jpg</span>
+																<span>jpeg</span>
+																<span>gif</span>
+															</dd>
+														</dl>
+														<!-- <p class="file_added video">
+															<a href="javascript:void(0);">
+																파일명 입니다 길경우 말줄임 표시합니다 파일명 입니다 길경우 말줄임 표시합니다 파일명 입니다 길경우 말줄임 표시합니다 파일명 입니다 길경우 말줄임 표시합니다 파일명 입니다 길경우 말줄임 표시합니다.mp4
+																<i>&#40;2.02MB&#41;</i>
+															</a>
+														</p>
+														<p class="file_added image">
+															<a href="javascript:void(0);">
+																eRoom Live 강의_20201202.jpg
+																<i>&#40;2.02MB&#41;</i>
+															</a>
+														</p>
+														<p class="file_added document">
+															<a href="javascript:void(0);">
+																eRoom Live 강의_20201202.hwp
+																<i>&#40;2.02MB&#41;</i>
+															</a>
+														</p>
+														<p class="file_added document">
+															<span>
+																파일명이 아무리 길어도 모두 보여줍니다 파일명이 아무리 길어도 모두 보여줍니다 파일명이 아무리 길어도 모두 보여줍니다 파일명이 아무리 길어도 모두 보여줍니다 파일명이 아무리 길어도 모두 보여줍니다.hwp 
+																<i>&#40;2.02MB&#41;</i>
+															</span>
+															<button type="button" class="btn_del">파일 삭제</button>
+														</p>
+														<p class="file_added document file_deleting">
+															<span>
+																eRoom Live 강의_20201202.hwp
+																<i>&#40;2.02MB&#41;</i>
+															</span>
+															<button type="button" class="btn_del">파일 삭제</button>
+														</p> -->
+													</div>
+													<div class="bottom">
+														<div class="test_bar">
+															<p class="wd_p50"></p>
+														</div>
+														<p class="file_volume">34.03KB / 2GB</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<h5 class="section_tit_sm">문의처</h5>
+										<ul class="list_dot">
+											<li>각 단과대학 및 마일리지 운영부서</li>
+											<li>학생복지팀</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--[pp] //본문내용영역 -->
+		</div>
+		<!--[pp] //본문영역 -->
+		<!--[pp] footer -->
+		<footer class="main-footer">
+			<strong>&copy; 2023 BY CHOSUN UNIVERSITY.</strong> ALL RIGHTS RESERVED.
+			<a id="back-to-top" href="javascript:void(0);" class="btn btn-default btn-sm back-to-top" role="button" title="페이지 상단으로 이동" data-toggle="tooltip" data-placement="left">
+				<span class="glyphicon glyphicon-chevron-up"></span>
+			</a>
+		</footer>
+		<!--[pp] //footer -->
+	</div>
+	<!-- js -->
+	<script src="../../../plugin/jquery/dist/jquery.min.js"></script>
+	<script src="../../../plugin/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../../../plugin/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="../../../plugin/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+	<script src="../../../plugin/fastclick/lib/fastclick.js"></script>
+	<script src="../../../js/jquery.mCustomScrollbar.min.js"></script>
+	<script src="../../../js/admin/src/adminlte.js"></script>
+	<script src="../../../js/admin/src/demo.js"></script>
+	<script src="../../../js/admin/pp_ui.js"></script>
+	<!-- //js -->
+	
+</body>
+
+</html>

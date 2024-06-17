@@ -1,0 +1,433 @@
+@charset "utf-8";
+
+/*  scrollbar */
+.mCSB_horizontal.mCSB_inside > .mCSB_container{
+	margin-bottom: 8px;
+}
+
+/* 모바일에서 세로방향 터치불가 fix */
+.mCustomScrollbar,
+.mCustomScrollbar.mCS_touch_action,
+.mCustomScrollbar.mCS_touch_action .mCS-aviva.mCSB_scrollTools {
+	-ms-touch-action: auto;
+	touch-action: auto;
+}
+.mCustomScrollBox {
+	height: auto;
+	-ms-touch-action: pan-x;
+	touch-action: pan-x;
+}
+.mCustomScrollBox.mCSB_vertical_horizontal {
+	-ms-touch-action: auto;
+	touch-action: auto;
+}
+.mCustomScrollBox.mCSB_horizontal {
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+}
+/*.mCustomScrollBox.mCSB_horizontal { touch-action: pan-y pinch-zoom; }*/
+
+.tbl {
+	position: relative;
+}
+.tbl table {
+	width: 100%;
+	text-align: center; font-size: 1.5rem;
+	background-color: #fff;
+	border-bottom: 1px solid #eee;
+}
+.tbl table thead th {
+	padding: 10px;
+	color: #000; font-weight: 500; text-align: center; 
+	background-color: #f3f4f9;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.tbl table tbody th, .tbl table tfoot th {
+	padding: 10px;
+	text-align: center; color: #000; 
+	border-bottom: 1px solid #eee;
+}
+.tbl table tbody td, .tbl table tfoot td {
+	padding: 10px;
+	text-align: center; color: #000;
+	border-bottom: 1px solid #eee;
+}
+.tbl table input[type="text"].form_style {
+	height: 34px;
+	line-height: 32px;
+}
+.tbl table .select_form {
+	line-height: 32px;
+}
+.tbl table .select_form label {
+	line-height: 30px;
+}
+.tbl table .search_day {
+	height: 34px;
+}
+.tbl table .search_day .calendar_open {
+	top: 5px;
+}
+.tbl table .search_group .search_at {
+	min-height: 34px;
+	line-height: 34px;
+}
+
+.tbl_col table {
+	border-top: 2px solid #009e9c;
+}
+.tbl_col table thead th {
+	padding: 10px 0;
+	font-weight: 500;
+	background-color: #e5f5f5;
+	border: 1px solid #eee;
+}
+.tbl_col table tbody td {
+	position: relative;
+	border: 1px solid #eee;
+}
+.tbl_col table thead th:first-child {
+	border-left: none;
+}
+.tbl_col table thead th:last-child {
+	border-right: none;
+}
+.tbl_col table tbody th:first-child {
+	border-left: none;
+}
+/* .tbl_col table tbody td:first-child {
+	border-left: none;
+} */
+.tbl_col table tbody td:last-child {
+	border-right: none;
+}
+.tbl_col .bg_td {
+	background: #e5f5f5;
+}
+
+.tbl_row table {
+	
+}
+.tbl_row table thead th {
+	padding: 10px 0;
+	font-weight: 500;
+	background-color: #e5f5f5;
+	border: 1px solid #eee;
+}
+.tbl_row table thead th:first-child {
+	border-left: none;
+}
+.tbl_row table thead th:last-child {
+	border-right: none;
+}
+.tbl_row table tbody th {
+	font-weight: 500; text-align: center; color: #000;
+	background-color: #e5f5f5;
+	border: 1px solid #eee;
+	border-left: 2px solid #009e9b;
+}
+.tbl_row table tbody td {
+	text-align: left;
+	border: 1px solid #eee;
+}
+.tbl_row table thead th:last-child {
+	border-right: none;
+}
+.tbl_row table tbody td:last-child {
+	border-right: none;
+}
+.tbl_row .bg_td {
+	background: #e5f5f5;
+}
+
+.tbl .ellipsis {
+	display: table-cell;
+}
+
+.tbl_row table tfoot th {
+	background-color: #e5f5f5;
+	border: 1px solid #eee;
+	border-left: none;
+}
+.tbl_row table tfoot td {
+	border: 1px solid #eee;
+}
+.tbl_row table tfoot td:last-child {
+	border-right: none;
+}
+
+/* 테이블 링크 */
+.td_append {
+	display: table;
+	width: auto;
+	word-break: break-word;
+	table-layout: fixed;
+}
+.td_append a {
+	display: table-cell;
+	font-weight: inherit; word-break: break-word;
+}
+.td_append a p {
+	position: relative;
+	display: block;
+	display: -webkit-box;
+	height: 22px;
+	font-weight: inherit; text-overflow: ellipsis; word-break: break-all; 
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+.td_append .td_appendicon {
+	display: table-cell;
+	font-size: 0; line-height: 0; white-space: nowrap;
+}
+.linked {
+	position: relative; top: -1px;
+	display: inline-block;
+	margin-left: 6px;
+	width: 14px; height: 14px;
+	vertical-align: 0;
+	background: url(../../images/client/formstyle/icon_td_linked.png) no-repeat center;
+}
+.filelinked {
+	position: relative; top: 0;
+	display: inline-block;
+	margin-left: 6px;
+	width: 16px; height: 17px;
+	vertical-align: 0;
+	background: url(../../images/client/formstyle/icon_filelinked.png) no-repeat center;
+}
+.td_append a {
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.tbl_col .filedown {
+	position: absolute; top: 50%; left: 50%;
+	display: inline-block;
+	width: 15px; height: 17px;
+	font-size: 0; line-height: 0; vertical-align: top;
+	background: url(../../images/client/formstyle/icon_filelinked.png) no-repeat center;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+/* 테이블 추가 */
+.reply_count {
+	display: inline-block;
+	vertical-align: text-bottom; font-size: 1.3rem; color: #b9190f;
+}
+
+/* 전공 로드맵 테이블 */
+.tbl_pamphlet table {
+	border-bottom: none;
+	border-spacing: 10px; border-collapse: separate;
+}
+.tbl_pamphlet table tbody td, .tbl_pamphlet table tfoot td {
+	padding: 10px;
+	color: #222; text-align: left;
+	border-bottom: none;
+}
+.tbl_pamphlet table thead th {
+	background: #fff;
+	border: none;
+}
+.tbl_pamphlet table tbody th {
+	border: none;
+}
+
+.tbl_pamphlet .bg_th, .tbl_pamphlet .bg_th1, .tbl_pamphlet .bg_th2, .tbl_pamphlet .bg_th3, .tbl_pamphlet .bg_th4 {
+  	padding: 16px 8px;
+	font-size: 1.7rem; font-weight: 600; line-height: 1.3em;
+}
+
+.tbl_pamphlet table thead .bg_th, .tbl_pamphlet table tbody .bg_th {
+	color: #101424; font-weight: 600;
+	background: #eee;
+}
+.tbl_pamphlet table thead .bg_td, .tbl_pamphlet table tbody .bg_td {
+	background: #eee;
+}
+
+.tbl_pamphlet .bg_th1 {
+	color: #fff;
+	background: #f550a5;
+}
+.tbl_pamphlet .bg_td1 {
+	background: #f9c7e1;
+}
+
+.tbl_pamphlet .bg_th2 {
+	color: #fff;
+	background: #0e7a3e;
+}
+.tbl_pamphlet .bg_td2 {
+	background: #b3d4c2;
+}
+
+.tbl_pamphlet .bg_th3 {
+	color: #fff;
+	background: #145bad;
+}
+.tbl_pamphlet .bg_td3 {
+	background: #b5cbe3;
+}
+
+.tbl_pamphlet .bg_th4 {
+	color: #fff;
+	background: #ff9b00;
+}
+.tbl_pamphlet .bg_td4 {
+	background: #fcdeaf;
+}
+
+
+/* 가로 스크롤 테이블 */
+.mCSB_container {
+	width: 100% !important;
+}
+.scrollx_tbl_xs {
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_xs .mCSB_container {
+	min-width: 500px !important;
+}
+.scrollx_tbl_xs table{
+	min-width: 500px;
+}
+.scrollx_tbl_sm {
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_sm .mCSB_container {
+	min-width: 600px !important;
+}
+.scrollx_tbl_sm table{
+	width: 100%;
+	min-width: 600px;
+}
+.scrollx_tbl_md{
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_md .mCSB_container {
+	min-width: 800px !important;
+}
+.scrollx_tbl_md table{
+	min-width: 800px;
+}
+.scrollx_tbl_lg{
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_lg .mCSB_container {
+	min-width: 1000px !important;
+}
+.scrollx_tbl_lg table{
+	min-width: 1000px;
+}
+.scrollx_tbl_xl{
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_xl .mCSB_container {
+	min-width: 1200px !important;
+}
+.scrollx_tbl_xl table{
+	min-width: 1200px;
+}
+.scrollx_tbl_xxl{
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_xxl .mCSB_container {
+	min-width: 1600px !important;
+}
+.scrollx_tbl_xxl table{
+	min-width: 1600px;
+}
+
+.tbl_hover tbody tr:hover {
+	background-color: #dbecf6;
+	cursor: pointer;
+}
+
+
+.td_input {
+	padding: 4px !important;
+}
+.tbl_fixed table {
+	table-layout: fixed;
+	word-break: break-all;
+}
+
+/* 공통 */
+.tb .select_form {
+	margin: 0;
+	margin-left: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 비교과 상세 테이블 */
+.tbl_text tbody tr {
+	border-top: 1px solid #cdcdcd;
+	border-bottom: 1px solid #cdcdcd;
+}
+.tbl_text tbody tr th, .tbl_text tbody tr td {
+	padding: 9px;
+	text-align: left;
+}
+
+/* 교과활동 이수 테이블 */
+.subject_addlist table tr.selected {
+	background-color: #dbecf6;
+}
+
+/* 포트폴리오 희망취업스타일 */
+.resume_container .tbl_col table th {
+	text-align: center;
+}
+.resume_container .tbl_col table td {
+	text-align: center;
+}
+
+
+
+/*=================== hover ===================*/
+@media screen and (min-width:1025px) {
+
+	/* 테이블 링크 hover */
+	.td_append a:hover {
+		color: #005ca9;
+	}
+
+
+}
+/*=================== //hover ===================*/
+@media screen and (max-width:768px) {
+	
+	
+
+}

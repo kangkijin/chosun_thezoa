@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, height=device-height, viewport-fit=cover, shrink-to-fit=no">
+	<meta name="title" content="대진대학교">
+	<meta name="description" content="대진대학교 인재양성 통합관리시스템 관리자 화면">
+	<meta name="copyrigt" content="대진대학교">
+	<meta name="keywords" content="대진대학교, 역량관리, 상담, 대학, 대학생, 역량관리시스템, 경력관리">
+	<title>대진대학교 관리자</title>
+	<link rel="apple-touch-icon" href="../../../images/dain_favicon_64.ico">
+	<link rel="shortcut icon" href="../../../images/dain_favicon_64.ico">
+	<!-- [pp] 아이콘글꼴/font-awesome -->
+	<link rel="stylesheet" href="../../../fonts/font-awesome/css/font-awesome.min.css">
+	<!-- [pp] 아이콘글꼴/font-awesome/파이어폭스 미출력 에러 대응 -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+	<!-- css -->
+	<link rel="stylesheet" href="../../../plugin/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="../../../plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="../../../plugin/Ionicons/css/ionicons.min.css">
+	<link rel="stylesheet" href="../../../css/admin/src/AdminLTE.css">
+	<link rel="stylesheet" href="../../../css/admin/src/skins/_all-skins.css">
+	<link rel="stylesheet" href="../../../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_common.css">
+	<link rel="stylesheet" href="../../../css/dl_global.css">
+	<link rel="stylesheet" href="../../../css/dl_grid.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_custom.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_table.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_popup.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_ui.css">
+</head>
+
+<body class="hold-transition skin-red sidebar-mini">
+	<!--[pp] 모달기본 -->
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">교수님 상담시간</h4>
+			</div>
+			<div class="modal-body">
+				<div class="pop_counsel_top">
+					<div class="date_paging">
+						<a href="javascript:void(0);" title="이전주" class="date_page_con date_prev">이전주 페이지</a>
+						<div class="date_current date_current1">
+							<strong>2019</strong>
+							<ul class="date_selectbox">
+								<li><a href="javascript:void(0);">2018</a></li>
+								<li><a href="javascript:void(0);">2019</a></li>
+								<li><a href="javascript:void(0);">2020</a></li>
+							</ul>
+						</div>
+						<div class="date_current date_current2">
+							<strong>10월</strong>
+							<ul class="date_selectbox">
+								<li><a href="javascript:void(0);">10월</a></li>
+								<li><a href="javascript:void(0);">11월</a></li>
+								<li><a href="javascript:void(0);">12월</a></li>
+							</ul>
+						</div>
+						<div class="date_current date_current3">
+							<strong>1주</strong>
+						</div>
+						<a href="javascript:void(0);" title="다음주" class="date_page_con date_next">다음주 페이지</a>
+					</div>
+					<ul class="date_info">
+						<li><span class="counsel_possible"></span>상담가능</li>
+						<li><span class="counsel_impossible"></span>상담불가</li>
+						<li><span class="counsel_full"></span>예약완료</li>
+					</ul>
+				</div>
+				<div class="pop_counsel_bottom table-responsive tbl_scroll_xs">
+					<table class="table table-bordered table-hover tbl_col tbl_row tbl_fixed">
+						<colgroup>
+							<col style="width: 16.666%;">
+							<col style="width: 16.666%;">
+							<col style="width: 16.666%;">
+							<col style="width: 16.666%;">
+							<col style="width: 16.666%;">
+							<col style="width: 16.666%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th></th>
+								<th scope="col">12일 / 월</th>
+								<th scope="col">13일 / 화</th>
+								<th scope="col">14일 / 수</th>
+								<th scope="col">15일 / 목</th>
+								<th scope="col">16일 / 금</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">09:00</th>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_impossible"></span></td>
+								<td><span class="counsel_full"></span></td>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_possible"></span></td>
+							</tr>
+							<tr>
+								<th scope="row">10:00</th>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_impossible"></span></td>
+								<td><span class="counsel_full"></span></td>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_possible"></span></td>
+							</tr>
+							<tr>
+								<th scope="row">11:00</th>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_impossible"></span></td>
+								<td><span class="counsel_full"></span></td>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_possible"></span></td>
+							</tr>
+							<tr>
+								<th scope="row">12:00</th>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_impossible"></span></td>
+								<td><span class="counsel_full"></span></td>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_possible"></span></td>
+							</tr>
+							<tr>
+								<th scope="row">13:00</th>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_impossible"></span></td>
+								<td><span class="counsel_full"></span></td>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_possible"></span></td>
+							</tr>
+							<tr>
+								<th scope="row">14:00</th>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_impossible"></span></td>
+								<td><span class="counsel_full"></span></td>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_possible"></span></td>
+							</tr>
+							<tr>
+								<th scope="row">15:00</th>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_impossible"></span></td>
+								<td><span class="counsel_full"></span></td>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_possible"></span></td>
+							</tr>
+							<tr>
+								<th scope="row">16:00</th>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_impossible"></span></td>
+								<td><span class="counsel_full"></span></td>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_possible"></span></td>
+							</tr>
+							<tr>
+								<th scope="row">17:00</th>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_impossible"></span></td>
+								<td><span class="counsel_full"></span></td>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_possible"></span></td>
+							</tr>
+							<tr>
+								<th scope="row">18:00</th>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_impossible"></span></td>
+								<td><span class="counsel_full"></span></td>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_possible"></span></td>
+							</tr>
+							<tr>
+								<th scope="row">19:00</th>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_impossible"></span></td>
+								<td><span class="counsel_full"></span></td>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_possible"></span></td>
+							</tr>
+							<tr>
+								<th scope="row">20:00</th>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_impossible"></span></td>
+								<td><span class="counsel_full"></span></td>
+								<td><span class="counsel_possible"></span></td>
+								<td><span class="counsel_possible"></span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--[pp] 모달기본 -->
+	<!-- js -->
+	<script src="../../../plugin/jquery/dist/jquery.min.js"></script>
+	<script src="../../../plugin/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../../../plugin/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="../../../plugin/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+	<script src="../../../plugin/fastclick/lib/fastclick.js"></script>
+	<script src="../../../js/jquery.mCustomScrollbar.min.js"></script>
+	<script src="../../../js/admin/src/adminlte.js"></script>
+	<script src="../../../js/admin/src/demo.js"></script>
+	<script src="../../../js/admin/pp_ui.js"></script>
+	<!-- //js -->
+</body>
+<script>
+	// selectbox 교수 상담 시간
+	function selectBoxCounsel(){
+		var windowWidth = $(window).outerWidth();
+		var target = $('.date_current');
+		var optBox = target.find('.date_selectbox').find('a');
+
+		if(windowWidth < 1025) {
+			target.on('click',function(){
+				$(this).find('.date_selectbox').stop().slideToggle(300);
+			});
+		}else {
+			target.on({
+				'mouseenter focus' : function(){
+					$(this).find('.date_selectbox').stop().slideDown(300);
+				},
+				'mouseleave blur' : function(){
+					$(this).find('.date_selectbox').stop().slideUp(300);
+				}
+			});
+		}
+		optBox.on('click',function(){
+			var optSelected = $(this).text();
+			$(this).parents('.date_selectbox').prev('strong').text(optSelected);
+		});	
+	}
+	
+	// selectbox 교수 상담 시간
+	selectBoxCounsel();
+</script>
+</html>

@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: 'NanumMyeongjo';
+	font-weight: normal;
+	src: url('../../font/NanumMyeongjo.eot');
+	src: url('../../font/NanumMyeongjo.eot?#iefix') format('embedded-opentype'),
+		local(NanumMyeongjo), url('../../../font/NanumMyeongjo.woff') format('woff'),
+		url('../../../font/NanumMyeongjo.ttf') format('truetype');
+}
+
+
+
+@media print {
+	@page {
+		size: portrait;
+		margin: 0;
+	}
+	html, body {
+		/*height: 99%;*/
+		overflow: hidden;
+	}
+	div.print_banner {
+		display: none;
+	}
+	div.page { 
+		width: initial; min-height: initial;
+		margin: 0;
+		box-shadow: initial; background: initial; border: initial;
+		page-break-after: avoid;
+		border: none;
+	}
+}
+@media print and (color) {
+	-webkit-print-color-adjust: exact;
+	print-color-adjust: exact;
+}
+
+* {
+	margin: 0; padding: 0;
+	line-height: 150%;
+	font-weight: normal;
+	/*color: #313131;*/
+	word-break: keep-all;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+img, button {
+	outline: 0;
+	border: 0;
+}
+table{ border-collapse: collapse; border-spacing:0px; table-layout: fixed; word-break: break-all;}
+table caption{ font-size:0; height:0; text-indent:-9999px; }
+ul li{list-style: none;}
+
+
+.print_banner {
+	position: relative;
+	margin-bottom: 60px;
+	width: 100%; height: 50px;
+	background: #ebf4f8;
+}
+.print_banner button {
+	position: absolute; top: 50%; right: 10px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.page {
+	position: relative;
+	width: 21cm;
+	/*height: 29.7cm;*/
+	height: auto;
+	padding: 0.4cm;
+	margin: 0cm auto 60px;
+	background: #fff;
+	border: 1px solid #3a3a3a;
+}
+
+/* 비교과 이수 증명서 */
+.bg_print {
+	position: absolute; top: 50%; left: 50%;
+	width: 500px; height: auto;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+.page_wrapper {
+	position: relative;
+	height: 100%;
+	padding: 3cm 2cm 2cm;
+	position: relative; /*overflow: hidden;*/
+	font-size: 17px; font-family: 'NanumMyeongjo', sans-serif;
+}
+.prin_title {
+	margin-bottom: 80px;
+	text-align: center;
+}
+.prin_title h1{
+	font-size: 1.8rem; font-weight: bold;
+	line-height: 1.5em; letter-spacing: 4px; 
+}
+.prin_title h1 span {
+	display: block;
+	font-size: 1.5rem;
+}
+.prin_title p {
+	position: absolute; top: 10px; left: 10px;
+	font-size: 0.94rem;
+}
+.prin_profile {
+	margin-left: 60%; margin-bottom: 90px;
+}
+.prin_profile table{
+	width: 100%; 
+}
+.prin_profile table th, .prin_profile table td {
+	padding: 2px 0;
+	text-align: left; 
+}
+.prin_profile .print_name span{
+	padding: 0 16px;
+}
+.prin_contents {
+	min-height: 380px;
+	text-indent: 20px; text-align: justify; word-break: keep-all;
+}
+.prin_contents p {
+	margin-bottom: 30px;
+	line-height: 1.7em; 
+}
+.prin_contents p span {
+	vertical-align: top;
+}
+.prin_contents table {
+	width: 100%;
+	text-align: center;
+}
+.prin_contents tr {
+	border: 1px solid #000;
+}
+.prin_contents th, .prin_contents td {
+	padding: 6px 0;
+	text-indent: 0;
+	border: 1px solid #000;
+}
+.prin_day_title {
+	width: 100%;
+	/*padding: 130px 0 130px;*/
+	/*padding: 170px 0 40px;*/
+	padding-bottom: 40px;
+	text-align: center;
+}
+.prin_day_title p:first-child {
+	display: block;
+	margin-bottom: 10px;
+}
+.prin_day_title p {
+	display: inline-block;
+}
+.prin_day_title p span {
+	padding: 0 16px;
+}
+.prin_stamp{
+	text-align: center; 
+}
+.prin_stamp p {
+	position: relative; 
+	display: inline-block;
+}
+.prin_stamp strong {
+	position: relative; z-index: 10;
+	display: inline-block;
+	font-size: 1.8rem; font-weight: bold; letter-spacing: 4px;
+}
+.prin_stamp img {
+	position: absolute; top: 50%; right: -60px;
+	display: inline-block;
+	width: 86px; height: auto;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+/* 비교과 이수 확인서 */
+.page_wrapper_sm {
+	position: relative;
+	height: 100%;
+	padding: 2.6cm 1cm 2cm;
+	position: relative; /*overflow: hidden;*/
+	font-size: 16px; font-family: 'NanumMyeongjo', sans-serif;
+}
+.page_wrapper_sm .prin_contents th {
+	background: #ebf7f9;
+}
+.page_wrapper_sm .prin_day_title {
+	padding: 60px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

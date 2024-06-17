@@ -1,0 +1,1440 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="조선대학교">
+		<meta name="description" content="조선대학교 WITH">
+		<meta name="copyrigt" content="조선대학교">
+		<meta name="keywords" content="조선대학교, 역량관리, 상담, 대학, 대학생, 역량관리시스템, 경력관리">
+		<title>조선대학교 WITH</title>
+
+		<!-- [pp] favicon -->
+		<link rel="apple-touch-icon" href="../../../../images/favicon.png">
+		<link rel="shortcut icon" href="../../../../images/favicon.ico">
+		<!-- [pp] //favicon -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" href="../../../../src/magnetic-popup/css/magnific-popup.css">
+		<link rel="stylesheet" href="../../../../src/mCustomScrollbar/css/jquery.mCustomScrollbar.min.css">
+		<link rel="stylesheet" href="../../../../src/select2/css/select2.css">
+		<link rel="stylesheet" href="../../../../src/apexchart/css/apexcharts.css">
+		<link rel="stylesheet" href="../../../../src/apexchart_v3.34.0/css/apexcharts.css">
+		<link rel="stylesheet" href="../../../../src/fullcalendar-5.7/css/main.min.css">
+		<link rel="stylesheet" href="../../../../src/swiper/css/swiper.css">
+		<link rel="stylesheet" href="../../../../css/dl_global.css">
+		<link rel="stylesheet" href="../../../../css/client/normalize.css">
+		<link rel="stylesheet" href="../../../../css/client/grid.css">
+		<link rel="stylesheet" href="../../../../css/client/formstyle.css">
+		<link rel="stylesheet" href="../../../../css/client/table.css">
+		<link rel="stylesheet" href="../../../../css/client/common_ui.css">
+		<link rel="stylesheet" href="../../../../css/client/ui.css">
+		<link rel="stylesheet" href="../../../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!--[pp] js -->
+		<script src="../../../../src/jquery/js/jquery-3.5.1.min.js"></script>
+		<!-- [if lt IE 9]>
+		<script src="../../../../src/jquery/js/jquery-1.12.3.min.js"></script>
+		<script src="../../../../src/jquery/js/html5shiv.js"></script>
+		<script src="../../../../src/jquery/js/IE9.js"></script>
+		<script src="../../../../src/jquery/js/respond.min.js"></script>
+		<![endif]-->
+		<script src="../../../../src/magnetic-popup/js/jquery.magnific-popup.js"></script>
+		<script src="../../../../src/mCustomScrollbar/js/jquery.mCustomScrollbar.min.js"></script>
+		<script src="../../../../src/select2/js/select2.min.js"></script>
+		<script src="../../../../src/apexchart/js/apexcharts.js"></script>
+		<script src="../../../../src/apexchart_v3.34.0/js/apexcharts.js"></script>
+		<script src="../../../../src/fullcalendar-5.7/js/main.min.js"></script>
+		<script src="../../../../src/fullcalendar-5.7/js/locales-all.min.js"></script>
+		<script src="../../../../src/swiper/js/swiper.min.js"></script>
+		<script src="../../../../js/client/pp_common.js"></script>
+		<!--[pp] //js -->
+	</head>
+	<body>
+		<!--[pp] ie 하위버젼 접속시 알림 -->
+		<div id="browseralert">
+			본 사이트는 익스플로러11 이상, 크롬, 오페라, 파이어폭스 브라우저등의 최신버전에 최적화 되어 있습니다.<br/>지금 사용하고 계시는 브라우저는 곧 지원이 중단되므로
+			<a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">익스플로러 최신버젼</a>으로 업그레이드하시거나 <a href="https://www.google.com/intl/ko/chrome/browser/" target="_blank">크롬</a>, <a href="http://www.opera.com/ko/computer" target="_blank" style="color:#f9c461;">오페라</a>, <a href="https://www.mozilla.org/en-US/firefox/new/?scene=2" target="_blank">파이어폭스</a>등의 최신 브라우저를 이용해 주세요.
+			<button type="button" class="browseralert_close">닫기</button>
+		</div>
+		<!--[pp] // ie 하위버젼 접속시 알림 -->
+		
+		<!-- [pp] 로딩중 화면 -->
+		<div id="loading" style="display: none;">
+			<p id="loading_image">
+				<img src="../../../../images/loading.gif" alt="Loading..."><br>
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 화면 -->
+		
+		<!-- [pp] 푸터를 제외한 전체페이지 -->
+		<div class="page_wrap professor_sub">
+		
+			<!--[pp] skip nav -->
+			<nav class="skip_nav">
+				<a href="#gnb_skip">주요메뉴 바로가기</a>
+				<a href="#container_skip">본문영역 바로가기</a>
+			</nav>
+			<!--[pp] //skip nav -->
+			
+			<!-- [pp] nav -->
+			<div class="prof_nav_wrap">
+				<!-- [pp] header -->
+				<header class="prof_header_wrap">
+					<div class="prof_header_top">
+						<div class="grid_content"> 
+							<p class="prof_user_info">
+								사용자님 환영합니다
+							</p>
+							<a href="javascript:void(0);" class="btn_prof_admin">관리자화면으로 이동</a>
+							<a href="javascript:void(0);" class="btn_prof_log btn_login">LOGIN</a>
+							<!-- [pp] 로그인/로그아웃 :
+							<a href="javascript:void(0);" class="btn_prof_log btn_login">로그인</a>
+							<a href="javascript:void(0);" class="btn_prof_log btn_logout">로그아웃</a>
+							-->
+						</div>
+					</div>
+					<div class="prof_header_bottom">
+						<div class="grid_content">
+							<h1 class="prof_header_logo">
+								<a href="javascript:void(0);">
+									<img src="../../../../images/client/common/header_logo2.svg" alt="조선대학교"/>
+								</a>
+							</h1>
+							<nav id="gnb_skip" class="prof_gnb_wrap" tabindex="0">
+								<ul class="prof_gnb_1depth">
+									<li>
+										<a href="javascript:void(0);">티칭 포트폴리오</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">교수지원 프로그램</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">학생상담</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">진단·설문</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">채용·취업</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">커뮤니티</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">마이페이지</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">비교과</a>
+									</li>
+								</ul>
+							</nav> 
+							<button type="button" class="btn_prof_menu">
+								메뉴보기
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+						</div>
+					</div>
+					<div class="prof_gnb_submenu">
+						<div class="grid_content">
+							<div class="prof_gnb_list">
+								<a href="javascript:void(0);" class="gnb_tit">티칭 포트폴리오</a>
+								<ul class="prof_gnb_2depth">
+									<li>
+										<a href="javascript:void(0);">교육철학</a>
+									</li> 
+									<li>
+										<a href="javascript:void(0);">수업전문성 개발</a>
+									</li> 
+									<li>
+										<a href="javascript:void(0);">My 포트폴리오</a>
+									</li> 
+									<li>
+										<a href="javascript:void(0);">공유 포트폴리오</a>
+									</li> 
+								</ul>
+							</div>
+							<div class="prof_gnb_list">
+								<a href="javascript:void(0);" class="gnb_tit">교수지원 프로그램</a>
+								<ul class="prof_gnb_2depth">
+									<li>
+										<a href="javascript:void(0);">프로그램 신청</a>
+									</li> 
+									<li>
+										<a href="javascript:void(0);">나의 프로그램</a>
+									</li> 
+								</ul>
+							</div>
+							<div class="prof_gnb_list">
+								<a href="javascript:void(0);" class="gnb_tit">학생상담</a>
+								<ul class="prof_gnb_2depth">
+									<li>
+										<a href="javascript:void(0);">신청현황 및 결과등록</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">상담 진행 히스토리</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">만족도 조사</a>
+									</li>
+								</ul>
+							</div>
+							<div class="prof_gnb_list">
+								<a href="javascript:void(0);" class="gnb_tit">진단·설문</a>
+								<ul class="prof_gnb_2depth">
+									<li>
+										<a href="javascript:void(0);">교수역량진단</a>
+									</li> 
+									<li>
+										<a href="javascript:void(0);">설문조사</a>
+									</li>
+								</ul>
+							</div>
+							<div class="prof_gnb_list">
+								<a href="javascript:void(0);" class="gnb_tit">채용·취업</a>
+								<ul class="prof_gnb_2depth">
+									<li>
+										<a href="javascript:void(0);">채용정보</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">취업정보</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">취업커뮤니티</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">취업출장신청</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">취업실적신청</a>
+									</li>
+								</ul>
+							</div>
+							<div class="prof_gnb_list">
+								<a href="javascript:void(0);" class="gnb_tit">커뮤니티</a>
+								<ul class="prof_gnb_2depth">
+									<li>
+										<a href="javascript:void(0);">공지사항</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">공간예약</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">장비대여</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">WITH 시스템 소개</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">FAQ</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">나의 쪽지</a>
+									</li>
+								</ul>
+							</div>
+							<div class="prof_gnb_list">
+								<a href="javascript:void(0);" class="gnb_tit">마이페이지</a>
+								<ul class="prof_gnb_2depth">
+									<li>
+										<a href="javascript:void(0);">마이페이지</a>
+									</li> 
+								</ul>
+							</div>
+							<div class="prof_gnb_list">
+								<a href="javascript:void(0);" class="gnb_tit">비교과</a>
+								<ul class="prof_gnb_2depth">
+									<li>
+										<a href="javascript:void(0);">비교과</a>
+									</li> 
+								</ul>
+							</div>
+						</div>
+					</div>
+				</header>
+				<!-- [pp] //header --> 
+				<!-- [pp] lnb 영역 -->
+				<div class="prof_lnb_wrap on">
+					<div class="grid_content">
+						<nav class="prof_lnb_list">
+							<a href="javascript:void(0);" class="btn_home">메인으로 가기</a>
+							<ul>
+								<li class="prof_lnb_1depth">
+									<a href="javascript:void(0);">마이페이지</a>
+									<ul class="prof_lnb_2depth">
+										<li>
+											<a href="javascript:void(0);">티칭 포트폴리오</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">교수지원 프로그램</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">학생상담</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">진단·설문</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">채용·취업</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">커뮤니티</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">마이페이지</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">비교과</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<!-- [pp] //lnb 영역 -->
+			</div>
+			<!-- [pp] //nav -->  
+
+			<!-- [pp] subpage 컨텐츠영역 -->
+			<section id="container_skip" class="subcontent_wrap grid_content" tabindex="0">
+				<section class="section_toparea section_marea">
+					<h3 class="section_proftit_lg">마이페이지</h3>   
+					<div class="prof_mypage_wrap">
+						<div class="prof_mypage_box program">
+							<div class="mypage_top">
+								교수지원 프로그램 이수 내역
+								<a href="javascript:void(0);" class="main_more">더보기</a>
+							</div> 
+							<!-- [pp] 내용 없을때 :
+								<div class="prof_nocnt_box">
+									<p>
+									내용이 없습니다.
+									</p>
+								</div>
+							-->
+							<ul class="mypage_cnt">
+								<li>
+									프로그램명
+									<strong>이수일</strong>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										2023 교수 프로그램 2023 교수 프로그램 2023 교수 프로그램 2023 교수 프로그램 2023 교수 프로그램
+										<strong>2023.01.30</strong>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										2023 교수 프로그램 2023 교수 프로그램 2023 교수 프로그램
+										<strong>2023.01.30</strong>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										2023 교수 프로그램
+										<strong>2023.01.30</strong>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										2023 교수 프로그램
+										<strong>2023.01.30</strong>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										2023 교수 프로그램
+										<strong>2023.01.30</strong>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										2023 교수 프로그램
+										<strong>2023.01.30</strong>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										2023 교수 프로그램
+										<strong>2023.01.30</strong>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										2023 교수 프로그램
+										<strong>2023.01.30</strong>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										2023 교수 프로그램
+										<strong>2023.01.30</strong>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										2023 교수 프로그램
+										<strong>2023.01.30</strong>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="prof_mypage_box rental">
+							<div class="mypage_top">
+								공간 예약 내역
+								<a href="javascript:void(0);" class="main_more">더보기</a>
+							</div>
+							<!-- [pp] 내용 없을때 :
+								<div class="prof_nocnt_box">
+									<p>
+									내용이 없습니다.
+									</p>
+								</div>
+							-->
+							<ul class="mypage_cnt">
+								<li>
+									공간명
+									<strong>예약일</strong>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										2023 교수 프로그램 2023 교수 프로그램 2023 교수 프로그램 2023 교수 프로그램 2023 교수 프로그램
+										<strong>2023.01.30</strong>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										2023 교수 프로그램 2023 교수 프로그램 2023 교수 프로그램
+										<strong>2023.01.30</strong>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										2023 교수 프로그램
+										<strong>2023.01.30</strong>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										2023 교수 프로그램
+										<strong>2023.01.30</strong>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										2023 교수 프로그램
+										<strong>2023.01.30</strong>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										2023 교수 프로그램
+										<strong>2023.01.30</strong>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										2023 교수 프로그램
+										<strong>2023.01.30</strong>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										2023 교수 프로그램
+										<strong>2023.01.30</strong>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										2023 교수 프로그램
+										<strong>2023.01.30</strong>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										2023 교수 프로그램
+										<strong>2023.01.30</strong>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="section_area">
+					<h4 class="section_proftit_md">교수역량 진단결과</h4>  
+					<h5 class="section_proftit_sm">진단결과 보기</h5>    
+					<div class="grid_row_lg box_checklist1">
+						<div class="grid_col col_xl_6 col_sm_3">
+							<!-- [pp] 클래스 on 으로 선택 제어 가능 -->
+							<div class="testdo_list testdo_checkbox on">
+								<dl>
+									<dt>
+										<span class="test_label impossible">진단완료</span>
+										2022 CSU 교수역량 진단
+									</dt>
+									<dd>
+										<strong>진단기간</strong>
+										2020.03.02 ~ 2020.03.20
+									</dd>
+									<dd>
+										<strong>진단일시</strong>
+										2019.06.11
+									</dd>
+									<dd>
+										<strong>진단대상</strong>
+										교원전체
+									</dd>
+									<dd>
+										<strong>진단상태</strong>
+										진단완료
+									</dd>
+								</dl>
+								<p class="check_only">
+									<input type="radio" name="testdo1" id="testdo1_1" class="hidden">
+									<label for="testdo1_1">진단 선택</label>
+								</p>
+							</div>
+						</div>
+						<div class="grid_col col_xl_6 col_sm_3">
+							<div class="testdo_list testdo_checkbox">
+								<dl>
+									<dt>
+										<span class="test_label impossible">진단완료</span>
+										2022 CSU 교수역량 진단
+									</dt>
+									<dd>
+										<strong>진단기간</strong>
+										2020.03.02 ~ 2020.03.20
+									</dd>
+									<dd>
+										<strong>진단일시</strong>
+										2019.06.11
+									</dd>
+									<dd>
+										<strong>진단대상</strong>
+										교원전체
+									</dd>
+									<dd>
+										<strong>진단상태</strong>
+										진단완료
+									</dd>
+								</dl>
+								<p class="check_only">
+									<input type="radio" name="testdo1" id="testdo1_2" class="hidden">
+									<label for="testdo1_2">진단 선택</label>
+								</p>
+							</div>
+						</div>
+						<div class="grid_col col_xl_6 col_sm_3">
+							<div class="testdo_list testdo_checkbox">
+								<dl>
+									<dt>
+										<span class="test_label impossible">진단완료</span>
+										2022 CSU 교수역량 진단
+									</dt>
+									<dd>
+										<strong>진단기간</strong>
+										2020.03.02 ~ 2020.03.20
+									</dd>
+									<dd>
+										<strong>진단일시</strong>
+										2019.06.11
+									</dd>
+									<dd>
+										<strong>진단대상</strong>
+										교원전체
+									</dd>
+									<dd>
+										<strong>진단상태</strong>
+										진단완료
+									</dd>
+								</dl>
+								<p class="check_only">
+									<input type="radio" name="testdo1" id="testdo1_3" class="hidden">
+									<label for="testdo1_3">진단 선택</label>
+								</p>
+							</div>
+						</div>
+						<div class="grid_col col_xl_6 col_sm_3">
+							<div class="testdo_list testdo_checkbox">
+								<dl>
+									<dt>
+										<span class="test_label impossible">진단완료</span>
+										2022 CSU 교수역량 진단
+									</dt>
+									<dd>
+										<strong>진단기간</strong>
+										2020.03.02 ~ 2020.03.20
+									</dd>
+									<dd>
+										<strong>진단일시</strong>
+										2019.06.11
+									</dd>
+									<dd>
+										<strong>진단대상</strong>
+										교원전체
+									</dd>
+									<dd>
+										<strong>진단상태</strong>
+										진단완료
+									</dd>
+								</dl>
+								<p class="check_only">
+									<input type="radio" name="testdo1" id="testdo1_4" class="hidden">
+									<label for="testdo1_4">진단 선택</label>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="testresult_wrap section_area">
+						<div class="section_marea">
+							<h4 class="prof testresult_tit">
+								2022 CSU 교수역량 진단 결과
+							</h4>
+							<div class="prof_tbl tbl tbl_row tbl_fixed scrollx_tbl_sm">
+								<table>
+									<caption>핵심역량진단 결과표</caption>
+									<colgroup>
+										<col style="width: 13.3%">
+										<col style="width: 20.3%">
+										<col style="width: 13.3%">
+										<col style="width: 20.3%">
+										<col style="width: 13.3%">
+										<col style="width: 20.3%">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">진단일</th>
+											<td>2023.04.05</td>
+											<th scope="row">교번</th>
+											<td>202104257</td>
+											<th scope="row">이름</th>
+											<td>홍길동</td>
+										</tr>
+										<tr>
+											<th scope="row">직위</th>
+											<td>정교수</td>
+											<th scope="row">학문계열</th>
+											<td>인문계열</td>
+											<th scope="row">성별</th>
+											<td>남성</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="prof_capainfo">
+								<p>역량 진단 결과 차트 색상별 의미</p>
+								<ul>
+									<li>나의 역량 평균</li>
+									<li>나의 강점 역량</li>
+									<li>보완 필요 역량</li>
+								</ul>
+								<strong>※보완필요 역량: 4역량 중(교수학습 기본, 설계, 실행, 성찰역량) 4.0점 미만에 해당하는 역량을 의미함</strong>
+							</div>
+						</div>
+						<div class="section_marea">
+							<h5 class="section_proftit_sm">전체결과</h5>
+							<div class="prof_intro_box capa_box">
+								<div>
+									<div class="prof_graph_box">
+										<div id="chart1">
+											<!-- [pp] 로딩중 박스 --> 
+											<!-- <div class="boxloading">
+												<img src="../../../../images/boxloading.gif" alt="로딩중입니다.">
+											</div>   -->
+											<!-- [pp] //로딩중 박스 -->
+										</div>
+										<div class="prof_tbl tbl tbl_col tbl_fixed">
+											<table>
+												<caption>교수학습 정의</caption>
+												<colgroup>
+													<col style="width: 25%;">
+													<col style="width: 75%;"> 
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">교수학습</th>
+														<th scope="col">정의</th> 
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">교수학습 기본역량</th>
+														<td class="ta_l">
+															대학 교수자로서 교수학습과 관련하여 기본적으로 갖추어야 할 역량 
+														</td> 
+													</tr>
+													<tr>
+														<th scope="row">교수학습 설계역량</th>
+														<td class="ta_l">
+															역량기반의 학습목표를 달성하기 위하여 교수학습 요소를 선정하고 실행과정을 계획하는 역량
+														</td> 
+													</tr>
+													<tr>
+														<th scope="row">교수학습 실행역량</th>
+														<td class="ta_l">
+															교수학습 설계 내용을 실제 수업현장 상황에 맞추어 유연하게 실행하는 역량
+														</td> 
+													</tr>
+													<tr>
+														<th scope="row">교수학습 성찰역량</th>
+														<td class="ta_l">
+															교수학습 과정을 분석하여 차기 수업을 개선하고, 상호발전하기 위해 동료 교수자와 교수활동의 성찰을 공유하여 개선하는 역량
+														</td> 
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="tab_js">
+										<ul class="tab_list tab_list_js">
+											<li class="on">
+												<a href="#tab1_1">교수학습 기본역량</a>
+											</li>
+											<li>
+												<a href="#tab1_2">교수학습 설계역량</a>
+											</li>
+											<li>
+												<a href="#tab1_3">교수학습 실행역량</a>
+											</li>
+											<li>
+												<a href="#tab1_4">교수학습 성찰역량</a>
+											</li>
+										</ul>
+										<div class="tab_cnt_js">
+											<div id="tab1_1" class="prof_chart_cnt">
+												<div id="chart2"> 
+													<!-- [pp] 로딩중 박스 --> 
+													<!-- <div class="boxloading">
+														<img src="../../../../images/boxloading.gif" alt="로딩중입니다.">
+													</div>   -->
+													<!-- [pp] //로딩중 박스 -->
+												</div>
+												<div class="prof_tbl tbl tbl_col tbl_fixed">
+													<table>
+														<caption>교수학습 기본역량 정의</caption>
+														<colgroup>
+															<col style="width: 25%;">
+															<col style="width: 75%;"> 
+														</colgroup>
+														<thead>
+															<tr>
+																<th scope="col">교수학습 기본역량</th>
+																<th scope="col">정의</th> 
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<th scope="row">교육철학정립</th>
+																<td class="ta_l">
+																	교육자로서 정체성을 중요히 여기고, 가르침과 배움의 가치를 학생들과 공유함으로써 바람직한 대학 교수자의 상을 구축해 나가려는 태도와 신념 
+																</td> 
+															</tr>
+															<tr>
+																<th scope="row">대학교육 이해</th>
+																<td class="ta_l">
+																	고등교육 환경의 변화, 대학의 역량기반 교육정책 변화를 이해하고자 노력하는 태도
+																</td> 
+															</tr>
+															<tr>
+																<th scope="row">학생 존중</th>
+																<td class="ta_l">
+																	개별 학생의 성공적인 학업을 위해 관심을 가지고, 학생들의 다양성 존중을 바탕으로 신뢰를 형성하는 태도
+																</td> 
+															</tr>
+															<tr>
+																<th scope="row">수업전문성 개발</th>
+																<td class="ta_l">
+																	교수자 역량을 지속적으로 향상시키기 위해 교수법과 테크놀로지 관련 지식을 습득하고 수업에 적용해 보는 능력
+																</td> 
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<div id="tab1_2" class="prof_chart_cnt">
+												<div id="chart3">
+													<!-- [pp] 로딩중 박스 --> 
+													<!-- <div class="boxloading">
+														<img src="../../../../images/boxloading.gif" alt="로딩중입니다.">
+													</div>   -->
+													<!-- [pp] //로딩중 박스 -->
+												</div>
+												<div class="prof_tbl tbl tbl_col tbl_fixed">
+													<table>
+														<caption>교수학습 설계역량 정의</caption>
+														<colgroup>
+															<col style="width: 25%;">
+															<col style="width: 75%;"> 
+														</colgroup>
+														<thead>
+															<tr>
+																<th scope="col">교수학습 설계역량</th>
+																<th scope="col">정의</th> 
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<th scope="row">학생특성 분석</th>
+																<td class="ta_l">
+																	학생의 특선, 사전학습 수준, 기대치, 역량 수준을 파악하여 교수학습 설계에 반영하는 능력
+																</td> 
+															</tr>
+															<tr>
+																<th scope="row">역량기반 목표설정</th>
+																<td class="ta_l">
+																	학샘역량(전공능력)과 연계하여 교과목의 목표와 주차별 수업목표를 설정하는 능력
+																</td> 
+															</tr>
+															<tr>
+																<th scope="row">내용조직화</th>
+																<td class="ta_l">
+																	교과목 내용 범위를 교과목과 연계된 역량에 기반하여 결정하고, 내용 요소 간의 상호관계를 고려하여 주차별 수업내용을 구성하는 능력
+																</td> 
+															</tr>
+															<tr>
+																<th scope="row">평가방법 설계</th>
+																<td class="ta_l">
+																	학업성취도를 평가하는 방법과 학습의 참여와 학습과정을 촉진하는 과정 중심 평가방법을 설계하는 능력
+																</td> 
+															</tr>
+															<tr>
+																<th scope="row">수업방법 설계</th>
+																<td class="ta_l">
+																	역량기반 목표 및 평가와 연계된 수업방법을 선택하고, 수업에 어떻게 적용할 것인지를 계획하는 능력
+																</td> 
+															</tr>
+															<tr>
+																<th scope="row">테크놀로지 설계</th>
+																<td class="ta_l">
+																	교수학습 환경 및 교과목과 학생 특성에 적합한 테크놀로지를 선택하고, 수업에 어떻게 활용할 것인지를 계획하는 능력
+																</td> 
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<div id="tab1_3" class="prof_chart_cnt">
+												<div id="chart4">
+													<!-- [pp] 로딩중 박스 --> 
+													<!-- <div class="boxloading">
+														<img src="../../../../images/boxloading.gif" alt="로딩중입니다.">
+													</div>   -->
+													<!-- [pp] //로딩중 박스 -->
+												</div>
+												<div class="prof_tbl tbl tbl_col tbl_fixed">
+													<table>
+														<caption>교수학습 실행역량 정의</caption>
+														<colgroup>
+															<col style="width: 25%;">
+															<col style="width: 75%;"> 
+														</colgroup>
+														<thead>
+															<tr>
+																<th scope="col">교수학습 실행역량</th>
+																<th scope="col">정의</th> 
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<th scope="row">수업분위기 조성</th>
+																<td class="ta_l">
+																	학생의 동기유발을 통해 학습준비도를 높이고, 수업활동에 집중도를 유지하도록 하는 능력
+																</td> 
+															</tr>
+															<tr>
+																<th scope="row">유연한 수업실행</th>
+																<td class="ta_l">
+																	교수학습 실행과정에서 다양한 문제를 포착하고, 계획을 조정하여 해결하는 능력
+																</td> 
+															</tr>
+															<tr>
+																<th scope="row">내용이해 촉진</th>
+																<td class="ta_l">
+																	교과목 내용에 대한 학습자의 이해를 돕기 위해 명확하고 효과적으로 표현, 전달, 조절하는 능력
+																</td> 
+															</tr>
+															<tr>
+																<th scope="row">학습참여 촉진</th>
+																<td class="ta_l">
+																	학습자의 수업활동 참여를 유도하기 위해 다양한 교수학습 전략을 적용하는 능력
+																</td> 
+															</tr>
+															<tr>
+																<th scope="row">테크놀로지 활용</th>
+																<td class="ta_l">
+																	온라인 또는 오프라인 교수학습 상황에서 계획한 테크놀로지를 수업 전에 점검하고 능숙하게 다루는 능력
+																</td> 
+															</tr>
+															<tr>
+																<th scope="row">평가 및 피드백 제공</th>
+																<td class="ta_l">
+																	계획에 근거하여 학습과정 및 성취에 대한 평가를 공정하게 실시하고, 학생들에게 구체적으로 피드백을 제공하는 능력
+																</td> 
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<div id="tab1_4" class="prof_chart_cnt">
+												<div id="chart5">
+													<!-- [pp] 로딩중 박스 --> 
+													<!-- <div class="boxloading">
+														<img src="../../../../images/boxloading.gif" alt="로딩중입니다.">
+													</div>   -->
+													<!-- [pp] //로딩중 박스 -->
+												</div>
+												<div class="prof_tbl tbl tbl_col tbl_fixed">
+													<table>
+														<caption>교수학습 성찰역량 정의</caption>
+														<colgroup>
+															<col style="width: 30%;">
+															<col style="width: 70%;"> 
+														</colgroup>
+														<thead>
+															<tr>
+																<th scope="col">교수학습 성찰역량</th>
+																<th scope="col">정의</th> 
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<th scope="row">교수학습 평가 및 개선</th>
+																<td class="ta_l">
+																	교수학습의 '계획-실행-평가' 활동을 분석하여 차기 수업개선 계획을 수립하고 개선하는 능력
+																</td> 
+															</tr>
+															<tr>
+																<th scope="row">성찰공유 및 의견수렴</th>
+																<td class="ta_l">
+																	교수학습의 '계획-실행-평가' 과정에서 성찰 및 개선요소를 동료 교수자와 자발적으로 공유하고 의견을 교류하는 태도
+																</td> 
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section_marea">
+							<h5 class="section_proftit_sm">3개년 그래프 </h5>
+							<div class="prof_intro_box capa_box">
+								<div>
+									<ul class="chartname_list">
+										<li>교수학습 기본역량</li>
+										<li>교수학습 설계역량</li>
+										<li>교수학습 실행역량</li>
+										<li>교수학습 성찰역량</li>
+									</ul>
+									<div id="chart6"> 
+										<!-- [pp] 로딩중 박스 --> 
+										<!-- <div class="boxloading">
+											<img src="../../../../images/boxloading.gif" alt="로딩중입니다.">
+										</div>   -->
+										<!-- [pp] //로딩중 박스 -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+			<!-- [pp] //subpage 컨텐츠영역 -->
+		</div>
+		<!-- [pp] //푸터를 제외한 전체페이지 -->
+
+		<!-- [pp] footer -->
+		<footer class="footer_wrap">
+			<div class="footer_top">
+				<div class="grid_content">
+					<ul>
+						<li>
+							<a href="https://www3.chosun.ac.kr/chosun/656/subview.do" class="medium" target="_blank">개인정보처리방침</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer_bottom">
+				<div class="grid_content">
+					<ul>
+						<li>
+							대표전화 :
+							<a href="tel:062-230-7114">062.230.7114</a>
+						</li>
+						<li>
+							팩스 : 
+							<a href="tel:062-232-8834">062.232.8834</a>
+						</li>
+						<li>
+							[우] 61452 광주광역시 동구 조선대길 146(서석동) 조선대학교
+						</li>
+					</ul>
+					<p class="copyright">
+						COPYRIGHT © CHOSUN UNIVERSITY ALL RIGHTS RESERVED.
+					</p>
+				</div>
+			</div>
+			<!-- [pp] TOP 키 -->
+			<a href="javascript:void(0);" class="move_top" title="페이지 상단으로 이동">TOP</a>
+		</footer>
+		<!-- [pp] //footer -->
+		<!-- [pp] apexcharts -->
+		<script>
+			var options1 = {
+				series: [{
+					name: '교수역량 진단결과',
+					data: [6, 7, 4, 7],
+				}],
+				chart: { 
+					height: 300,
+					type: 'radar',
+					dropShadow: {
+						enabled: true,
+						blur: 1,
+						left: 1,
+						top: 1
+					},  	 	
+					toolbar: { 
+						show: false
+					} 
+				},
+				stroke: {
+					width: 2
+				},
+				plotOptions: {
+					radar: {
+						size: 100
+					}
+				},  
+				stroke: {
+					colors: ['#a5a5a5'],
+				},
+				fill: {
+					colors: ['rgba(0,0,0,0)'],
+					opacity: 0.1
+				}, 
+				dataLabels: {
+					enabled: true, 
+					background: {
+						enabled: true,
+						foreColor: '#fff',
+						padding: 5,
+						borderRadius: 50,
+						borderWidth: 1,
+						borderColor: '#fff',
+					},
+					style: {
+						fontSize: '10px', 
+						colors: ['#1a5499'], 
+					}
+				}, 
+				xaxis: {
+					categories: ['교수학습 기본역량', ['교수학습','설계역량'], '교수학습 실행역량', ['교수학습','성찰역량']], 
+					labels: {
+						style: { 
+							colors: ['#666','#666','#666','#666'],  
+							fontSize: '14px', 
+							fontWeight: 500,
+							fontFamily: 'Notokr'
+						}, 
+					}
+				}, 
+				yaxis: {
+					tickAmount: 8,
+					labels: {
+						formatter: function(val, i) {
+							if (i % 2 === 0) {
+								return val
+							} else {
+								return ''
+							}
+						}
+					}
+				},    
+			};  
+
+			var options2 = {
+				series: [{
+					name: '교수학습 기본역량',
+					data: [4.2, 3.7, 4.5, 4.1, 4.0]
+				}],
+				chart: {
+					type: 'bar',  
+					height: 300, 
+					toolbar: {
+						show: false
+					}
+				},
+				colors: ['#00a048','#ec1c24','#0058a6','#b8bec1','#b8bec1'],
+				fill: {
+					colors: ['#00a048','#ec1c24','#0058a6','#b8bec1','#b8bec1'],
+				},
+				plotOptions: {
+					bar: { 
+						columnWidth: '40%', 
+						distributed: true,
+						horizontal: false,
+					}
+				},
+				dataLabels: {
+					enabled: true, 
+				},
+				legend: {
+					show: false
+				},
+				xaxis: { 
+					categories: [['교수학습','기본역량'], ['교육철학','정립'], ['대학교육','이해'], '학생존중', ['수업전문성','개발']],
+					labels: {
+						style: { 
+							fontSize: '15px', 
+							fontWeight: 500,
+							fontFamily: 'Notokr', 
+						}
+					},
+					axisBorder: {
+						show: true,  
+						color: '#ddd',
+					},
+					axisTicks: {
+						show: false,
+					}, 
+				}, 
+				yaxis: {  
+					axisBorder: {
+						show: true,
+						color: '#ddd',
+						offsetX: 0,
+						offsetY: 0
+					}, 
+					labels : {
+						show: true
+					}
+				},
+				responsive:[{
+					breakpoint: 768,
+					options:{ 
+						chart: {  
+							height: 200,  
+						},
+						xaxis: {  
+							labels: {
+								style: { 
+									fontSize: '13px',  
+								}
+							},
+						},
+					}, 
+				}]
+			};
+
+			var options3 = {
+				series: [{
+					name: '교수학습 설계역량',
+					data: [3.8,3.5,3.7,3.8,3.9,3.9,4.0]
+				}],
+				chart: {
+					type: 'bar',  
+					height: 350, 
+					toolbar: {
+						show: false
+					}
+				},
+				colors: ['#00a048','#ec1c24','#b8bec1','#b8bec1','#b8bec1','#b8bec1','#0058a6'],
+				fill: {
+					colors: ['#00a048','#ec1c24','#b8bec1','#b8bec1','#b8bec1','#b8bec1','#0058a6'],
+				},
+				plotOptions: {
+					bar: { 
+						columnWidth: '50%', 
+						distributed: true,
+						horizontal: false,
+					}
+				},
+				dataLabels: {
+					enabled: true, 
+				},
+				legend: {
+					show: false
+				},
+				xaxis: { 
+					categories: [['교수학습','설계역량'], ['학생특성','분석'], ['역량기반','목표설정'], ['내용','조직화'],['평가방법','설계'],['수업방법','설계'],['테크놀로지','설계'],],
+					labels: {
+						style: { 
+							fontSize: '15px', 
+							fontWeight: 500,
+							fontFamily: 'Notokr', 
+						}
+					},
+					axisBorder: {
+						show: true,  
+						color: '#ddd',
+					},
+					axisTicks: {
+						show: false,
+					}, 
+				}, 
+				yaxis: {  
+					axisBorder: {
+						show: true,
+						color: '#ddd',
+						offsetX: 0,
+						offsetY: 0
+					}, 
+					labels : {
+						show: true
+					}
+				},
+				responsive:[{
+					breakpoint: 768,
+					options:{ 
+						chart: {  
+							height: 200,  
+						},
+						xaxis: {  
+							labels: {
+								style: { 
+									fontSize: '13px',  
+								}
+							},
+						},
+					}, 
+				}]
+			};
+
+			var options4 = {
+				series: [{
+					name: '교수학습 실행역량',
+					data: [3.8,3.5,3.7,3.8,3.9,3.9,4.0]
+				}],
+				chart: {
+					type: 'bar',  
+					height: 350, 
+					toolbar: {
+						show: false
+					}
+				},
+				colors: ['#00a048','#ec1c24','#b8bec1','#b8bec1','#b8bec1','#b8bec1','#0058a6'],
+				fill: {
+					colors: ['#00a048','#ec1c24','#b8bec1','#b8bec1','#b8bec1','#b8bec1','#0058a6'],
+				},
+				plotOptions: {
+					bar: { 
+						columnWidth: '50%', 
+						distributed: true,
+						horizontal: false,
+					}
+				},
+				dataLabels: {
+					enabled: true, 
+				},
+				legend: {
+					show: false
+				},
+				xaxis: { 
+					categories: [['교수학습','실행역량'], ['수업분위기','조성'], ['유연한 수업','실행'], ['내용이해','촉진'],['학습참여','촉진'],['테크놀로지','활용'],['평가 및','피드백 제공'],],
+					labels: {
+						style: { 
+							fontSize: '15px', 
+							fontWeight: 500,
+							fontFamily: 'Notokr', 
+						}
+					},
+					axisBorder: {
+						show: true,  
+						color: '#ddd',
+					},
+					axisTicks: {
+						show: false,
+					}, 
+				}, 
+				yaxis: {  
+					axisBorder: {
+						show: true,
+						color: '#ddd',
+						offsetX: 0,
+						offsetY: 0
+					}, 
+					labels : {
+						show: true
+					}
+				},
+				responsive:[{
+					breakpoint: 768,
+					options:{ 
+						chart: {  
+							height: 200,  
+						},
+						xaxis: {  
+							labels: {
+								style: { 
+									fontSize: '13px',  
+								}
+							},
+						},
+					}, 
+				}]
+			};
+
+			var options5 = {
+				series: [{
+					name: '교수학습 성찰역량',
+					data: [3.8, 4.5, 4.7]
+				}],
+				chart: {
+					type: 'bar',  
+					height: 250, 
+					toolbar: {
+						show: false
+					}
+				},
+				colors: ['#00a048','#ec1c24','#0058a6'],
+				fill: {
+					colors: ['#00a048','#ec1c24','#0058a6'],
+				},
+				plotOptions: {
+					bar: { 
+						columnWidth: '30%', 
+						distributed: true,
+						horizontal: false,
+					}
+				},
+				dataLabels: {
+					enabled: true, 
+				},
+				legend: {
+					show: false
+				},
+				xaxis: { 
+					categories: [['교수학습','성찰역량'], ['교수학습','평가 및 개선'], ['성찰공유 및','의견수렴']],
+					labels: {
+						style: { 
+							fontSize: '15px', 
+							fontWeight: 500,
+							fontFamily: 'Notokr', 
+						}
+					},
+					axisBorder: {
+						show: true,  
+						color: '#ddd',
+					},
+					axisTicks: {
+						show: false,
+					}, 
+				}, 
+				yaxis: {  
+					axisBorder: {
+						show: true,
+						color: '#ddd',
+						offsetX: 0,
+						offsetY: 0
+					}, 
+					labels : {
+						show: true
+					}
+				},
+				responsive:[{
+					breakpoint: 768,
+					options:{ 
+						chart: {  
+							height: 200,  
+						},
+						xaxis: {  
+							labels: {
+								style: { 
+									fontSize: '13px',  
+								}
+							},
+						},
+					}, 
+				}]
+			};
+
+			var options6 = {
+				chart: {
+					type: 'bar',
+					height: 350,
+					toolbar: {
+						show: false
+					}
+				},
+				colors: ['#00a048','#ec1c24','#0058a6'],
+				fill: {
+					colors: ['#00a048','#ec1c24','#0058a6'],
+				},
+				plotOptions: {
+					bar: { 
+						columnWidth: '20%',  
+						barWidth: '40%',
+					}
+				},
+				dataLabels: {
+					enabled: true, 
+				},
+				series: [{
+					name: '2021',
+					data: [4.0, 4.0, 4.0, 4.0]
+				}, {
+					name: '2022',
+					data: [3.8, 3.8, 3.8, 3.8]
+				}, {
+					name: '2023',
+					data: [4.2, 4.2, 4.2, 4.2]
+				}],
+				xaxis: {
+					categories: ['교수학습 기본역량', '교수학습 설계역량', '교수학습 실행역량', '교수학습 성찰역량'],
+				},
+				legend: {
+					show: false
+				}, 
+				stroke: {
+					show: true,
+					width: 10,
+					colors: ['transparent']
+				}, 
+				plotOptions: {
+					bar: {
+						dataLabels: {
+							formatter: function(val, opts) {
+								return opts.seriesName // 시리즈 이름으로 변경
+							}
+						}
+					}
+				}, 
+				responsive:[{
+					breakpoint: 768,
+					options:{ 
+						chart: {  
+							height: 280,  
+						},
+					}, 
+				}]
+			};
+
+
+			var chart1 = new ApexCharts(document.querySelector("#chart1"), options1); 
+			var chart2 = new ApexCharts(document.querySelector("#chart2"), options2); 
+			var chart3 = new ApexCharts(document.querySelector("#chart3"), options3); 
+			var chart4 = new ApexCharts(document.querySelector("#chart4"), options4);  
+			var chart5 = new ApexCharts(document.querySelector("#chart5"), options5); 
+			var chart6 = new ApexCharts(document.querySelector("#chart6"), options6); 
+
+			chart1.render(); 
+			chart2.render(); 
+			chart3.render(); 
+			chart4.render();  
+			chart5.render(); 
+			chart6.render(); 
+		</script>
+		<!-- [pp] //apexcharts -->
+	</body>
+</html>

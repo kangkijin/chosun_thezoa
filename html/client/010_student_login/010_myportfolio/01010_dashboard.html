@@ -1,0 +1,777 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="조선대학교">
+		<meta name="description" content="조선대학교 WITH">
+		<meta name="copyrigt" content="조선대학교">
+		<meta name="keywords" content="조선대학교, 역량관리, 상담, 대학, 대학생, 역량관리시스템, 경력관리">
+		<title>조선대학교 WITH</title>
+
+		<!-- [pp] favicon -->
+		<link rel="apple-touch-icon" href="../../../../images/favicon.png">
+		<link rel="shortcut icon" href="../../../../images/favicon.ico">
+		<!-- [pp] //favicon -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" href="../../../../src/magnetic-popup/css/magnific-popup.css">
+		<link rel="stylesheet" href="../../../../src/mCustomScrollbar/css/jquery.mCustomScrollbar.min.css">
+		<link rel="stylesheet" href="../../../../src/select2/css/select2.css">
+		<link rel="stylesheet" href="../../../../src/apexchart/css/apexcharts.css">
+		<link rel="stylesheet" href="../../../../src/apexchart_v3.34.0/css/apexcharts.css">
+		<link rel="stylesheet" href="../../../../src/fullcalendar-5.7/css/main.min.css">
+		<link rel="stylesheet" href="../../../../src/swiper/css/swiper.css">
+		<link rel="stylesheet" href="../../../../css/dl_global.css">
+		<link rel="stylesheet" href="../../../../css/client/normalize.css">
+		<link rel="stylesheet" href="../../../../css/client/grid.css">
+		<link rel="stylesheet" href="../../../../css/client/formstyle.css">
+		<link rel="stylesheet" href="../../../../css/client/table.css">
+		<link rel="stylesheet" href="../../../../css/client/common_ui.css">
+		<link rel="stylesheet" href="../../../../css/client/ui.css">
+		<link rel="stylesheet" href="../../../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!--[pp] js -->
+		<script src="../../../../src/jquery/js/jquery-3.5.1.min.js"></script>
+		<!-- [if lt IE 9]>
+		<script src="../../../../src/jquery/js/jquery-1.12.3.min.js"></script>
+		<script src="../../../../src/jquery/js/html5shiv.js"></script>
+		<script src="../../../../src/jquery/js/IE9.js"></script>
+		<script src="../../../../src/jquery/js/respond.min.js"></script>
+		<![endif]-->
+		<script src="../../../../src/magnetic-popup/js/jquery.magnific-popup.js"></script>
+		<script src="../../../../src/mCustomScrollbar/js/jquery.mCustomScrollbar.min.js"></script>
+		<script src="../../../../src/select2/js/select2.min.js"></script>
+		<script src="../../../../src/apexchart/js/apexcharts.js"></script>
+		<script src="../../../../src/apexchart_v3.34.0/js/apexcharts.js"></script>
+		<script src="../../../../src/fullcalendar-5.7/js/main.min.js"></script>
+		<script src="../../../../src/fullcalendar-5.7/js/locales-all.min.js"></script>
+		<script src="../../../../src/swiper/js/swiper.min.js"></script>
+		<script src="../../../../js/client/pp_common.js"></script>
+		<!--[pp] //js -->
+	</head>
+	<body>
+		<!--[pp] ie 하위버젼 접속시 알림 -->
+		<div id="browseralert">
+			본 사이트는 익스플로러11 이상, 크롬, 오페라, 파이어폭스 브라우저등의 최신버전에 최적화 되어 있습니다.<br/>지금 사용하고 계시는 브라우저는 곧 지원이 중단되므로
+			<a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">익스플로러 최신버젼</a>으로 업그레이드하시거나 <a href="https://www.google.com/intl/ko/chrome/browser/" target="_blank">크롬</a>, <a href="http://www.opera.com/ko/computer" target="_blank" style="color:#f9c461;">오페라</a>, <a href="https://www.mozilla.org/en-US/firefox/new/?scene=2" target="_blank">파이어폭스</a>등의 최신 브라우저를 이용해 주세요.
+			<button type="button" class="browseralert_close">닫기</button>
+		</div>
+		<!--[pp] // ie 하위버젼 접속시 알림 -->
+		
+		<!-- [pp] 로딩중 화면 -->
+		<div id="loading" style="display: none;">
+			<p id="loading_image">
+				<img src="../../../../images/loading.gif" alt="Loading..."><br>
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 화면 -->
+		
+		<!-- [pp] 푸터를 제외한 전체페이지 -->
+		<div class="page_wrap">
+		
+			<!--[pp] skip nav -->
+			<nav class="skip_nav">
+				<a href="#gnb_skip">주요메뉴 바로가기</a>
+				<a href="#container_skip">본문영역 바로가기</a>
+			</nav>
+			<!--[pp] //skip nav -->
+			
+			<!-- [pp] header, sitemap -->
+			<div class="nav_wrap">
+				<!-- [pp] header -->
+				<header class="header_wrap">
+					<div class="header_top grid_content">
+						<h1 class="header_logo">
+							<a href="javascript:void(0);">
+								<img src="../../../../images/client/common/header_logo.svg" alt="조선대학교"/>
+							</a>
+						</h1>
+						<div class="function_left">
+							<a href="javascript:void(0);" class="btn_log btn_login">LOGIN</a>
+							<!-- [pp] 로그인/로그아웃 : 
+							<a href="javascript:void(0);" class="btn_log btn_login">LOGIN</a>
+							<a href="javascript:void(0);" class="btn_log btn_logout">LOGOUT</a>
+							-->
+							<p class="user_info">
+								<strong>김조선</strong> &#40;님&#41; 환영합니다
+							</p>
+							<a href="javascript:void(0);" class="btn_msg">
+								받은 메세지 : <span id="count">12</span>
+							</a>
+						</div>
+						<a href="javascript:void(0);" class="btn_admin">관리자화면으로 이동</a>
+						<button type="button" class="btn_sitemapmenu">닫기</button>
+						<button type="button" class="btn_menu">
+							메뉴보기
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+					<div class="header_bottom grid_content">
+						<nav id="gnb_skip" class="gnb_wrap" tabindex="0">
+							<ul class="gnb_list">
+								<li class="gnb_1depth gnb01">
+									<a href="javascript:void(0);">My 포트폴리오</a>
+									<ul class="gnb_2depth">
+										<li>
+											<a href="javascript:void(0);">대시보드</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">기본정보</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">학습활동</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">역량개발활동</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">CSU 문화마일리지</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">우수 포트폴리오</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">포트폴리오 제작</a>
+										</li>
+									</ul>
+								</li>
+								<li class="gnb_1depth gnb02">
+									<a href="javascript:void(0);">비교과</a>
+									<ul class="gnb_2depth">
+										<li>
+											<a href="javascript:void(0);">비교과 신청</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">나의 비교과</a>
+										</li>
+									</ul>
+								</li>
+								<li class="gnb_1depth gnb03">
+									<a href="javascript:void(0);">학생상담</a>
+									<ul class="gnb_2depth">
+										<li>
+											<a href="javascript:void(0);">지도교수상담</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">학습상담</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">심리상담</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">진로/취업상담</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">성희롱/성폭력 상담</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">나의 상담 내역</a>
+										</li>
+									</ul>
+								</li>
+								<li class="gnb_1depth gnb04">
+									<a href="javascript:void(0);">진로·취업</a>
+									<ul class="gnb_2depth">
+										<li>
+											<a href="javascript:void(0);">채용정보</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">취업정보</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">취업 커뮤니티</a>
+										</li>
+									</ul>
+								</li>
+								<li class="gnb_1depth gnb05">
+									<a href="javascript:void(0);">진단·설문</a>
+									<ul class="gnb_2depth">
+										<li>
+											<a href="javascript:void(0);">핵심역량진단</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">학습역량진단</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">기타역량진단</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">교육 수요자 만족도조사</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">설문조사</a>
+										</li>
+									</ul>
+								</li>
+								<li class="gnb_1depth gnb06">
+									<a href="javascript:void(0);">커뮤니티</a>
+									<ul class="gnb_2depth">
+										<li>
+											<a href="javascript:void(0);">공지사항</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">공간대여</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">장비대여</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">WITH 시스템 소개</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">FAQ</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">나의 쪽지</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</header>
+				<!-- [pp] //header -->
+
+				<!-- [pp] 사이트맵 -->
+				<div class="sitemap">
+					<div class="inner">
+						<div class="sitemap_bottom">
+							<div class="grid_content">
+								<button type="button" class="btn_sitemap">닫기</button>
+								<div class="gnb_2depth">
+									<strong class="gnb_tit">My 포트폴리오</strong>
+									<ul>
+										<li>
+											<a href="javascript:void(0);">대시보드</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">기본정보</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">학습활동</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">역량개발활동</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">CSU 문화마일리지</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">우수 포트폴리오</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">포트폴리오 제작</a>
+										</li>
+									</ul>
+								</div>
+								<div class="gnb_2depth">
+									<strong class="gnb_tit">비교과</strong>
+									<ul>
+										<li>
+											<a href="javascript:void(0);">비교과 신청</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">나의 비교과</a>
+										</li>
+									</ul>
+								</div>
+								<div class="gnb_2depth">
+									<strong class="gnb_tit">학생상담</strong>
+									<ul>
+										<li>
+											<a href="javascript:void(0);">지도교수상담</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">학습상담</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">심리상담</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">진로/취업상담</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">성희롱/성폭력 상담</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">나의 상담 내역</a>
+										</li>
+									</ul>
+								</div>
+								<div class="gnb_2depth">
+									<strong class="gnb_tit">진로·취업</strong>
+									<ul>
+										<li>
+											<a href="javascript:void(0);">채용정보</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">취업정보</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">취업 커뮤니티</a>
+										</li>
+									</ul>
+								</div>
+								<div class="gnb_2depth">
+									<strong class="gnb_tit">진단·설문</strong>
+									<ul>
+										<li>
+											<a href="javascript:void(0);">핵심역량진단</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">학습역량진단</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">기타역량진단</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">교육 수요자 만족도조사</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">설문조사</a>
+										</li>
+									</ul>
+								</div>
+								<div class="gnb_2depth">
+									<strong class="gnb_tit">커뮤니티</strong>
+									<ul>
+										<li>
+											<a href="javascript:void(0);">공지사항</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">공간대여</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">장비대여</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">WITH 시스템 소개</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">FAQ</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">나의 쪽지</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- [pp] //header, sitemap -->
+			</div>
+			
+
+			<div class="subpage_visual on visual1">
+				<div class="grid_content">
+					<h2>My 포트폴리오</h2>
+				</div>
+			</div>
+
+			<!-- [pp] lnb 영역 -->
+			<div class="lnb_wrap on">
+				<div class="grid_content">
+					<nav class="lnb_list">
+						<ul>
+							<li class="lnb_1depth on">
+								<a href="javascript:void(0);">대시보드</a>
+							</li>
+							<li class="lnb_1depth">
+								<a href="javascript:void(0);">기본정보</a>
+							</li>
+							<li class="lnb_1depth">
+								<a href="javascript:void(0);">학습활동</a>
+							</li>
+							<li class="lnb_1depth">
+								<a href="javascript:void(0);">역량개발활동</a>
+							</li>
+							<li class="lnb_1depth">
+								<a href="javascript:void(0);">CSU 문화마일리지</a>
+							</li>
+							<li class="lnb_1depth">
+								<a href="javascript:void(0);">우수포트폴리오</a>
+							</li>
+							<li class="lnb_1depth">
+								<a href="javascript:void(0);">포트폴리오 제작</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- [pp] //lnb 영역 -->
+
+
+			<!-- [pp] subpage 컨텐츠영역 -->
+			<section id="container_skip" class="subcontent_wrap grid_content" tabindex="0">
+				<section class="section_toparea section_area">
+					<h3 class="section_tit_lg">대시보드</h3>
+					<div class="grid_row_lg dashboard1">
+						<div class="grid_col col_xl_6 col_xlg_12">
+							<h4 class="section_tit_md">나의 성장 스토리</h4>
+							<div class="gradient_box">
+								<!-- [pp] 단계별 캐릭터 :
+									level1 : 소나무
+									level2 : 무등산
+									level3 : 새
+									level4 : 무등산위의 새
+								-->
+								<div class="growth_box level4">성장 스토리</div>
+							</div>
+						</div>
+						<div class="grid_col col_xl_6 col_xlg_12">
+							<div class="btn_rowposition rowposition_sm">
+								<h4 class="section_tit_md">4IR 소양인증제</h4>
+								<div class="inner">
+									<button type="button" class="btn_md btn_circle btn_positive2 mg_t5">4IR 소양인증제란?</button>
+									<button type="button" class="btn_md btn_circle btn_positive1 mg_t5">내역상세보기</button>
+								</div>
+							</div>
+							<div class="gradient_box">
+								<div class="quality_box">
+									<!-- [pp] 달성, 미달성 :
+									<strong class="good">달성</strong>
+									<strong class="bad">미달성</strong>
+									-->
+									<strong class="bad">미달성</strong>
+									<ul>
+										<li>
+											미래산업이해<br/> 기초
+											<strong class="good">완료</strong>
+										</li>
+										<li>
+											미래산업이해<br/> 심화
+											<strong class="bad">미완료</strong>
+										</li>
+										<li>
+											AI·빅데이터활용<br/> 기초
+											<strong class="good">완료</strong>
+										</li>
+										<li>
+											AI·빅데이터활용<br/> 심화
+											<strong class="bad">미완료</strong>
+										</li>
+										<li>
+											CSU SDGs
+											<strong class="good">완료</strong>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section_marea">
+						<div class="btn_rowposition">
+							<h4 class="section_tit_md">핵심역량인증제</h4>
+							<div class="inner">
+								<button type="button" class="btn_md btn_circle btn_positive1 mg_t5">내역상세보기</button>
+							</div>
+						</div>
+						<div class="gradient_box">
+							<div>
+								<div class="dashboard_half">
+									<div>
+										<ul class="badge_list">
+											<li>
+												<!-- [pp] 클래스 on 추가시 활성화 -->
+												<a href="javascript:void(0);" class="together on">함께형 인재</a>
+											</li>
+											<li>
+												<!-- [pp] 클래스 on 추가시 활성화 -->
+												<a href="javascript:void(0);" class="self top on">자기주도형 인재</a>
+												<a href="javascript:void(0);" class="self bottom">자기주도형 인재</a>
+											</li>
+											<li>
+												<!-- [pp] 클래스 on 추가시 활성화 -->
+												<a href="javascript:void(0);" class="creative top">창의융합형 인재</a>
+												<a href="javascript:void(0);" class="creative bottom on">창의융합형 인재</a>
+											</li>
+											<li>
+												<!-- [pp] 클래스 on 추가시 활성화 -->
+												<a href="javascript:void(0);" class="consider top on">배려봉사형 인재</a>
+												<a href="javascript:void(0);" class="consider bottom">배려봉사형 인재</a>
+											</li>
+										</ul>
+									</div>
+									<div>
+										<div id="chart2" class="boxloading_wrap">
+											<!-- [pp] 로딩 :
+											<div class="boxloading">
+												<img src="../../images/boxloading.gif" alt="로딩중입니다.">
+											</div>
+											-->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section_marea">
+						<h4 class="section_tit_md">CSU 핵심역량 인증제</h4>
+						<div class="gradient_box">
+							<div class="tab_js">
+								<ul class="tab_flex tab_list_js">
+									<li class="on">
+										<a href="#tab1">제도안내</a>
+									</li>
+									<li>
+										<a href="#tab2">핵심역량</a>
+									</li>
+									<li>
+										<a href="#tab3">인증기준</a>
+									</li>
+								</ul>
+								<div class="tab_cnt_js">
+									<div id="tab1">
+										<div class="section_sarea">
+											<ul class="list_dot">
+												<li>조선대학교 인재상인 ‘함께형 인재’에 부합하는 3대 핵심역량을 함양한 우수 인재를 발굴하여 인증하는 제도로 자기주도, 창의융합, 배려봉사 역량별 달성 정도에 따라 일반, 우수, 최우수 수준별 인증 수여.</li>
+												<li>학생의 교양 교과 및 비교과 활동에 대한 성과를 체계적으로 관리 및 지원하여 3대 핵심역량 강화.</li>
+											</ul>
+											<ul class="csuinfo_list">
+												<li>
+													<strong>인증 적용 대상</strong>
+													전체 재학생<br/>
+													(2020 학번<br/> 신입생부터 적용)
+												</li>
+												<li>
+													<strong>인증 시기</strong>
+													8학기 말<br/>
+													(단, 조기 졸업자는<br/> 졸업 학기 말)
+												</li>
+												<li>
+													<strong>인증 신청</strong>
+													별도의 신청 없이<br/>
+													(인증 시기에<br/> 자동 심사 진행)
+												</li>
+												<li>
+													<strong>인증 결과</strong>
+													CU+(학생통합지원시스템)<br/>
+													에서 점수 확인 및<br/> 증명서 발급 가능
+												</li>
+											</ul>
+										</div>
+										<div class="section_sarea mg_b0">
+											<h5 class="section_tit_sm">인증 유형</h5>
+											<ul class="csutype_list">
+												<li>
+													<strong>일반 인증</strong>
+													자기주도형 인재/<br/>
+													창의융합형 인재/<br/>
+													배려봉사형 인재/<br/>
+													개별 인증
+												</li>
+												<li>
+													<strong>우수 인증</strong>
+													자기주도형 인재/<br/>
+													창의융합형 인재/<br/>
+													배려봉사형 인재/<br/>
+													개별 인증
+												</li>
+												<li>
+													<strong>최우수 인증</strong>
+													함께형 인재/<br/>
+													(자기주도, 창의융합,<br/>
+													배려봉사의 우수 인증<br/>
+													기준 모두 만족)
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div id="tab2">
+										<ul class="csucapa_list">
+											<li class="confidence">
+												<strong>자기주도<br/>Confidence</strong>
+												<ul>
+													<li>
+														<strong>자기관리</strong>
+														목표 달성을 위해 계획에 따라 자기 주도적으로 수행하고, 어려움에 대처하는 능력
+													</li>
+													<li>
+														<strong>리더십</strong>
+														자신이 속한 공동체의 비전과 목표가 달성되도록 자신감을 가지고 진취적으로 행동하며 주위 사람들을 이끄는 능력
+													</li>
+												</ul>
+											</li>
+											<li class="convergence">
+												<strong>창의융합<br/>Convergence</strong>
+												<ul>
+													<li>
+														<strong>창의적 문제해결</strong>
+														새롭고 다양한 관점으로 문제를 인식하고 최적의 대안으로 문제를 해결하는 능력
+													</li>
+													<li>
+														<strong>정보분석활용</strong>
+														적절한 기술을 사용하여 정보를 수집, 분석, 평가, 활용하는 능력
+													</li>
+													<li>
+														<strong>의사소통</strong>
+														자신의 견해를 명확히 표현하고 효과적으로 타인과 소통하는 능력
+													</li>
+												</ul>
+											</li>
+											<li class="consideration">
+												<strong>배려봉사<br/>Consideration</strong>
+												<ul>
+													<li>
+														<strong>시민의식</strong>
+														민주사회 시민으로서의 민주적 가치와 책임감을 가지고 공동체에 참여하는 능력
+													</li>
+													<li>
+														<strong>협업</strong>
+														공동의 목표 달성을 위해 책임 있는 역할수행을 하며 구성원과 협력하는 능력
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+									<div id="tab3">
+										<div class="openimg_wrap ta_c mg_b20">
+											<a class="openimg" href="../../../../images/client/sub/img_csustandard.png">
+												<img src="../../../../images/client/sub/img_csustandard.png" alt="CSU 핵심역량 인증제 인증기준">
+											</a>
+										</div>
+										<ul class="font_alert">
+											<li>개요 |  인증기준 | * 교양 교과 및 비교과 역량별 비율 : 주역량 0.5 / 부역량1 0.25 / 부역량2 0.25</li>
+											<li>* Ⓒ = 교양 교과목 학점 × 취득 평점 × 역량별 비율 [예시 : 2학점 × 3(B0 ~ B+) × 0.5]</li>
+											<li>* Ⓜ = 비교과 문화 마일리지 × 역량별 비율 [예시 : 5점 × 0.5]</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+			<!-- [pp] //subpage 컨텐츠영역 -->
+		</div>
+		<!-- [pp] //푸터를 제외한 전체페이지 -->
+
+		<!-- [pp] footer -->
+		<footer class="footer_wrap">
+			<div class="footer_top">
+				<div class="grid_content">
+					<ul>
+						<li>
+							<a href="https://www3.chosun.ac.kr/chosun/656/subview.do" class="medium" target="_blank">개인정보처리방침</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer_bottom">
+				<div class="grid_content">
+					<ul>
+						<li>
+							대표전화 :
+							<a href="tel:062-230-7114">062.230.7114</a>
+						</li>
+						<li>
+							팩스 : 
+							<a href="tel:062-232-8834">062.232.8834</a>
+						</li>
+						<li>
+							[우] 61452 광주광역시 동구 조선대길 146(서석동) 조선대학교
+						</li>
+					</ul>
+					<p class="copyright">
+						COPYRIGHT © CHOSUN UNIVERSITY ALL RIGHTS RESERVED.
+					</p>
+				</div>
+			</div>
+			<!-- [pp] TOP 키 -->
+			<a href="javascript:void(0);" class="move_top" title="페이지 상단으로 이동">TOP</a>
+		</footer>
+		<!-- [pp] //footer -->
+
+		<script>
+
+			var options2 = {
+				series: [
+					{
+						name: '교과',
+						data: [70, 70, 40],
+					},
+					{
+						name: '비교과',
+						data: [40, 60, 100],
+					},
+				],
+				chart: {
+					type: 'bar',  
+					height: 210, 
+					toolbar: {
+						show: false
+					}
+				},
+				colors: ['#6cc8bb','#855199'],
+				fill: {
+					colors: ['#6cc8bb','#855199'],
+				},
+				plotOptions: {
+					bar: {
+						columnWidth: '60%',
+						horizontal: false,
+					}
+				},
+				dataLabels: {
+					enabled: true, 
+				},
+				legend: {
+					position: 'bottom',
+					offsetY: 10
+				},
+				stroke: {
+					show: true,
+					width: 20,
+					colors: ['transparent']
+				},
+				xaxis: { 
+					categories: ['자기주도형 인재', '창의융합형 인재', '배려봉사형 인재'],
+					axisBorder: {
+						show: true,  
+						color: '#eee',
+					},
+					axisTicks: {
+						show: false,
+					}, 
+				}, 
+				yaxis: {  
+					axisBorder: {
+						show: false,
+					}, 
+					labels : {
+						show: false
+					}
+				},
+				responsive: [{
+					breakpoint: 1024,
+					options:{
+						plotOptions: {
+							bar: {
+								columnWidth: '100%',
+								horizontal: false,
+							}
+						},
+						stroke: {
+							width: 5,
+						},
+					}
+				}]
+			};
+
+			
+			var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
+
+			chart2.render();
+
+		</script>
+
+	</body>
+</html>
